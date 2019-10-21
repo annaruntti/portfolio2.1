@@ -1,5 +1,5 @@
 import * as React from "react";
-import HeaderImage from "../../images/anna.jpg";
+import HeaderImage from "../../images/at-logo-white.png";
 import "./Header.scss";
 
 export default function Header() {
@@ -8,12 +8,15 @@ export default function Header() {
             <div className="container">
                 <div className="flex-row">
                     <div className="flex-left">
-                        <div className="image-cropper">
-                            <img className="header-image" src={HeaderImage} alt="" />
-                        </div>
+                        <h1 className="header-title">Portfolio</h1>
                     </div>
                     <div className="flex-right">
-                        <h1 className="header-title">Anna Tiala</h1>
+                        <div className="flex-row">
+                            <div className="image-cropper">
+                                <img className="header-image" src={HeaderImage} alt="" />
+                            </div>
+                            <h1 className="header-title-name">Anna Tiala</h1>
+                        </div>
                     </div>
                 </div>
             </div>

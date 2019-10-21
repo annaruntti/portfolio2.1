@@ -1,17 +1,18 @@
 .header {
-    background-color: #00A38D;
-    padding: 0.5rem;
+    background: linear-gradient(110deg, #E7498A 40%, #00AD95 40%);
+    padding: 2rem 0.5rem 0;
 }
 
 .image-cropper {
-    width: 200px;
-    height: 200px;
+    background-color: #E7498A;
     position: relative;
     overflow: hidden;
+    max-width: 70px;
+    max-height: 70px;
     border-radius: 50%;
-    left: -50px;
     z-index: 900;
-    box-shadow: 0px 2px 20px 2px rgba(0, 0, 0, 0.6);
+    top: -17px;
+    box-shadow: 0px 2px 12px 0px rgba(0, 0, 0, 0.6);
 }
 
 .header-image {
@@ -26,15 +27,19 @@
 
 .header-title {
     color: #fff;
-    width: 100px;
+}
+
+.header-title-name {
+    color: #fff;
+    margin-left: 1rem;
 }
 
 .header .flex-left {
-    width: 25%;
+    width: 30%;
 }
 
 .header .flex-right {
-    width: 75%;
+    width: 70%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -43,15 +48,7 @@
     text-align: right;
 }
 
-@media (min-width: 576px) {
-    .image-cropper {
-        width: 250px;
-        height: 250px;
-    }
-
-    .header-image {
-        width: 250px;
-    }
+@media (min-width: 991px) {
 
     .header {
         width: 100%;
@@ -60,10 +57,6 @@
     .header-title {
         width: 100%;
         font-size: 3rem;
-    }
-
-    .image-cropper {
-        left: 0;
     }
 
     // .header h1 {
