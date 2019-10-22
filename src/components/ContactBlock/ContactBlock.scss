@@ -26,12 +26,14 @@
 
 .contact-btn {
     color: #E7498A;
-    border-radius: 25px;
-    padding: 0.5rem 1.5rem;
     background-color: #fff;
+    border-radius: 25px;
+    padding: 0.75rem 2rem;
     font-size: 1.5rem;
     font-weight: 700;
     font-family: "Roboto", sans-serif;
+    border: none;
+    box-shadow: 0px 2px 11px 0px rgba(0, 0, 0, 0.4);
 }
 
 @media (min-width: 768px) {
@@ -41,7 +43,7 @@
     }
 
     .contact-block {
-        padding: 1.5rem 0.5rem;
+        padding: 2rem 1.5rem 2.5rem;
         background: linear-gradient(65deg, #FFC1CB 45%, #90EAD9 40%);
     }
 }
