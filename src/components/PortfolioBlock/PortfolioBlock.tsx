@@ -10,6 +10,7 @@ export default function PortfolioBlock() {
                     <div className="flex-left">
                         <h1 className="cv-title">Portfolioni</h1>
                         <h3>Käy selaamassa töitäni portfoliostani. Portfolioon on listattu mm. tekemiäni nettisivuprojekteja, web-designia, graafista designia, ottamiani valokuvia ja tekemiäni piirustuksia ja maalauksia.</h3>
+                        <button className="portfolio-btn">Lue lisää</button>
                     </div>
                     <div className="flex-right">
                         <div className="image-area">

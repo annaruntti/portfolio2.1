@@ -1,5 +1,5 @@
 .portfolio-block {
-    background: linear-gradient(110deg, #fff 40%, #FFC1CB 40%);
+    background: linear-gradient(108deg, #fff 45%, #FFC1CB 40%);
     padding: 2rem 1.5rem 1rem;
 }
 
@@ -19,6 +19,16 @@
 .portfolio-image {
     width: 60%;
     position: relative;
+}
+
+.portfolio-btn {
+    color: #fff;
+    border-radius: 25px;
+    padding: 0.5rem 1.5rem;
+    background-color: #00AD95;
+    font-size: 1.5rem;
+    font-weight: 700;
+    font-family: "Roboto", sans-serif;
 }
 
 @media (min-width: 768px) {
@@ -42,5 +52,6 @@
 
     .portfolio-block .image-area {
         text-align: right;
+        padding-top: 20px;
     }
 }

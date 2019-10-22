@@ -24,6 +24,16 @@
     padding-top: 1rem;
 }
 
+.cv-btn {
+    color: #fff;
+    border-radius: 25px;
+    padding: 0.5rem 1.5rem;
+    background-color: #E7498A;
+    font-size: 1.5rem;
+    font-weight: 700;
+    font-family: "Roboto", sans-serif;
+}
+
 @media (min-width: 768px) {
     .cv-block .flex-row {
         display: flex;
@@ -33,5 +43,26 @@
     .cv-block {
         padding: 1.5rem 0.5rem;
         background: linear-gradient(57deg, #90EAD9 50%, #fff 50%);
+    }
+
+    .cv-block .flex-right {
+        text-align: right;
+        width: 50%;
+    }
+
+    .cv-block .flex-left {
+        width: 50%;
+        padding-top: 2rem;
+    }
+
+    .cv-block .image-area {
+        width: 100%;
+    }
+
+    .cv-image {
+        width: 80%;
+        left: 3rem;
+        padding: 0 0 2rem 2rem;
+        position: relative;
     }
 }
