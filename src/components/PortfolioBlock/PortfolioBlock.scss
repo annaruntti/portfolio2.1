@@ -1,0 +1,46 @@
+.portfolio-block {
+    background: linear-gradient(110deg, #fff 40%, #FFC1CB 40%);
+    padding: 2rem 1.5rem 1rem;
+}
+
+.portfolio-block .flex-right {
+    color: #4A4A4A;
+    text-align: right;
+}
+
+.portfolio-block .flex-row {
+    display: grid;
+}
+
+.portfolio-block .image-area {
+    text-align: right;
+}
+
+.portfolio-image {
+    width: 60%;
+    position: relative;
+}
+
+@media (min-width: 768px) {
+    .portfolio-block {
+        background: linear-gradient(110deg, #fff 50%, #FFC1CB 40%);
+        padding: 2rem 0.5rem 2rem;
+    }
+
+    .portfolio-block .flex-row {
+        display: flex;
+    }
+
+    .portfolio-block .flex-right {
+        text-align: right;
+        width: 60%;
+    }
+
+    .portfolio-block .flex-left {
+        width: 40%;
+    }
+
+    .portfolio-block .image-area {
+        text-align: right;
+    }
+}

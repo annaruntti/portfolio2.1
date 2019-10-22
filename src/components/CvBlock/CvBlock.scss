@@ -1,14 +1,17 @@
 .cv-block {
-    background-color: #fff;
-    padding: 1.5rem 0.5rem;
-    color: #fff;
-    background: linear-gradient(110deg, #00AD95 45%, #fff 40%);
+    padding: 1.5rem 1.5rem;
+    color: #4A4A4A;
+    background: linear-gradient(65deg, #90EAD9 45%, #fff 40%);
 }
 
 .cv-block .image-area {
     text-align: right;
     margin-left: auto;
     width: 70%
+}
+
+.cv-block .flex-row {
+    display: grid;
 }
 
 .cv-image {
@@ -19,4 +22,16 @@
 
 .cv-title {
     padding-top: 1rem;
+}
+
+@media (min-width: 768px) {
+    .cv-block .flex-row {
+        display: flex;
+        padding-right: 1.5rem;
+    }
+
+    .cv-block {
+        padding: 1.5rem 0.5rem;
+        background: linear-gradient(57deg, #90EAD9 50%, #fff 50%);
+    }
 }
