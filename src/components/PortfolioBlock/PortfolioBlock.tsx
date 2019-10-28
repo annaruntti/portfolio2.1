@@ -8,8 +8,8 @@ export default function PortfolioBlock() {
             <div className="container">
                 <div className="flex-row">
                     <div className="flex-left">
-                        <h1 className="cv-title">Portfolioni</h1>
-                        <h3>Käy selaamassa töitäni portfoliostani. Portfolioon on listattu mm. tekemiäni nettisivuprojekteja, web-designia, graafista designia, ottamiani valokuvia ja tekemiäni piirustuksia ja maalauksia.</h3>
+                        <h2 className="cv-title">Portfolioni</h2>
+                        <p className="large-text">Käy selaamassa töitäni portfoliostani. Portfolioon on listattu mm. tekemiäni nettisivuprojekteja, web-designia, graafista designia, ottamiani valokuvia ja tekemiäni piirustuksia ja maalauksia.</p>
                         <button className="portfolio-btn">Lue lisää</button>
                     </div>
                     <div className="flex-right">

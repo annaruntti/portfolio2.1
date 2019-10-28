@@ -1,0 +1,32 @@
+.cv-area {
+    padding: 1rem;
+}
+
+.cv-area .flex-row {
+    display: grid;
+}
+
+.flex-item-left {
+    padding: 2rem;
+}
+
+.flex-item-right {
+    padding: 2rem;
+}
+
+.cv-area .image-cropper {
+    position: relative;
+    overflow: hidden;
+    max-width: 200px;
+    max-height: 200px;
+    border-radius: 50%;
+    z-index: 900;
+    margin-bottom: 1rem;
+    box-shadow: 0px 2px 2px #4a4a4a;
+}
+
+@media (min-width: 768px) {
+    .cv-area .flex-row {
+        display: flex;
+    }
+}

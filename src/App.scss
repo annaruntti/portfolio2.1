@@ -1,12 +1,12 @@
-@import url("https://fonts.googleapis.com/css?family=Roboto:400,700");
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Song+Myung&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Lobster&display=swap");
 
 body {
   color: #4A4A4A !important;
-  font-family: "Roboto", sans-serif !important;
+  font-family: 'Source Sans Pro', sans-serif;
   font-weight: normal;
+  font-size: 18px;
+  line-height: 1.3;
   word-wrap: break-word;
   font-kerning: normal;
   -moz-font-feature-settings: "kern", "liga", "clig", "calt";
@@ -41,9 +41,9 @@ h2 {
   padding-top: 0;
   margin-bottom: 1.45rem;
   color: inherit;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Lobster', cursive;
   text-rendering: optimizeLegibility;
-  font-size: 1.8rem;
+  font-size: 2rem;
   line-height: 1.1;
 }
 
@@ -57,7 +57,7 @@ h3 {
   padding-top: 0;
   margin-bottom: 1.45rem;
   color: inherit;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Lobster', cursive;
   text-rendering: optimizeLegibility;
   font-size: 1.5rem;
   line-height: 1.3;

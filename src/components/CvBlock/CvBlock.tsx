@@ -8,9 +8,9 @@ export default function CvBlock() {
             <div className="container">
                 <div className="flex-row">
                     <div className="flex-left">
-                        <h1 className="cv-title">Ansioluetteloni</h1>
-                        <h3>Käy lukemassa ansioluetteloni!<br />
-                            Ansioluettelossani on listattu työkokemukseni, koulutukseni, taitoni ja harrastukseni.</h3>
+                        <h2 className="cv-title">Ansioluetteloni</h2>
+                        <p className="large-text">Käy lukemassa ansioluetteloni!<br />
+                            Ansioluettelossani on listattu työkokemukseni, koulutukseni, taitoni ja harrastukseni.</p>
                         <button className="cv-btn">Lue lisää</button>
                     </div>
                     <div className="flex-right">

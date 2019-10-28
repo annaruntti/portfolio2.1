@@ -2,11 +2,11 @@
     padding: 1rem 0.5rem 0;
     position: relative;
     height: 428px;
-    background: linear-gradient(-121deg, #00AD95 40%, rgba(0, 0, 0, 0) 40%), url(/static/media/header-image.b8d6786f.jpg);
+    background: linear-gradient(-121deg, #00AD95 40%, rgba(0, 0, 0, 0) 40%), url(../../images/header-image.jpg);
     background-position: 26% 14%;
 }
 
-.image-cropper {
+.header .image-cropper {
     background-color: #E7498A;
     position: relative;
     overflow: hidden;
@@ -84,7 +84,7 @@
         top: 20px;
     }
 
-    .image-cropper {
+    .header .image-cropper {
         top: 20px;
     }
 
