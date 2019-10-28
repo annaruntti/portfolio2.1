@@ -1,5 +1,6 @@
 .cv-area {
     padding: 1rem;
+    background: linear-gradient(57deg, #90EAD9 50%, #fff 50%);
 }
 
 .cv-area .flex-row {
@@ -20,8 +21,10 @@
     max-width: 200px;
     max-height: 200px;
     border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
     z-index: 900;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
     box-shadow: 0px 2px 2px #4a4a4a;
 }
 
