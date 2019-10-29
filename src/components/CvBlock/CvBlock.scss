@@ -33,7 +33,16 @@
     font-weight: 700;
     font-family: 'Source Sans Pro', sans-serif;
     border: none;
+    text-decoration: none;
     box-shadow: 0px 2px 2px rgba(74, 74, 74, 0.8);
+}
+
+.cv-btn:hover {
+    background-color: #FFC1CB;
+}
+
+.cv-btn:active {
+    background-color: #FFC1CB;
 }
 
 .large-text {
