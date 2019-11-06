@@ -12,7 +12,7 @@ export default function Header() {
                     <div className="header-text-area">
                         <div className="flex-row">
                             <div className="image-cropper">
-                                <img className="header-image" src={HeaderImage} alt="" />
+                                <img className="header-image" src={HeaderImage} alt="Me and my dogs" />
                             </div>
                             <h1 className="header-title-name">Anna Tiala</h1>
                         </div>

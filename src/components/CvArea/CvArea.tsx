@@ -9,7 +9,7 @@ export default function CvArea() {
                 <div className="flex-row">
                     <div className="flex-item-left">
                         <div className="image-cropper">
-                            <img className="header-image" src={ProfileImage} alt="" />
+                            <img className="header-image" src={ProfileImage} alt="My profile image" />
                         </div>
                         <h3>Yhteystiedot</h3>
                         <p>linkedin.com/in/annaruntti/<br />
@@ -22,12 +22,12 @@ export default function CvArea() {
                     </div>
                     <div className="flex-item-right">
                         <h3>Koulutus</h3>
-                        <p><b>Master’s studies, University of Oulu, Faculty of Information Technology and Electrical Engineering</b><br />
-                            - Major in information processing science, since 2010<br />
-                            - Minor in movie analysis, since 2015<br />
-                            - Management studies in Oulu Business School, in 2013</p>
+                        <p><b>Tietojenkäsittelytieteiden opintoja, Oulun yliopisto, Sähkö- ja tietotekniikan tiedekunta</b><br />
+                            - Pääaine: Tietojenkäsittelytieteet, 2010-2018<br />
+                            - Sivuaine: Elokuva-analyysi, humanistinen tiedekunta, 2015<br />
+                            - Sivuaine: Johtaminen, Oulun yliopiston kauppakorkeakoulu, 2013</p>
 
-                        <p>Matriculation examination, 2009, Kiimingin lukio, Kiiminki</p>
+                        <p>Ylioppilas, 2009, Kiimingin lukio</p>
 
                         <h3>Työkokemus</h3>
 

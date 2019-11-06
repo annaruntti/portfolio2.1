@@ -17,7 +17,7 @@ export default function Navigation() {
                         <Link to={"/portfolio"}>Portfolio</Link>
                     </li>
                     <li>
-                        <Link to={"/yhteystiedot"}>Yhteys</Link>
+                        <Link to={"/yhteys"}>Yhteys</Link>
                     </li>
                 </ul>
             </div>
