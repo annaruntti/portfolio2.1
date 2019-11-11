@@ -1,5 +1,6 @@
 import * as React from "react";
 import PortfolioImage from "../../images/art.png";
+import { Link } from "react-router-dom";
 import "./PortfolioBlock.scss";
 
 export default function PortfolioBlock() {
@@ -10,7 +11,7 @@ export default function PortfolioBlock() {
                     <div className="flex-left">
                         <h2 className="cv-title">Portfolioni</h2>
                         <p className="large-text">Käy selaamassa töitäni portfoliostani. Portfolioon on listattu mm. tekemiäni nettisivuprojekteja, web-designia, graafista designia, ottamiani valokuvia ja tekemiäni piirustuksia ja maalauksia.</p>
-                        <button className="portfolio-btn">Lue lisää</button>
+                        <Link to={"/portfolio"} className="portfolio-btn">Portfolioon</Link>
                     </div>
                     <div className="flex-right">
                         <div className="image-area">

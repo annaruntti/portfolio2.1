@@ -1,5 +1,6 @@
 import * as React from "react";
 import ContactImage from "../../images/contact.png";
+import { Link } from "react-router-dom";
 import "./ContactBlock.scss";
 
 export default function ContactBlock() {
@@ -11,7 +12,7 @@ export default function ContactBlock() {
                         <h2 className="cv-title">Ota yhteyttä!</h2>
                         <p className="large-text">Kiinnostuitko?<br />
                             Yhteystiedot -sivulta löydät yhteystietoni, sekä yhteydenottolomakkeen, jolla voit lähettää minulle sähköpostia.</p>
-                        <button className="contact-btn">Lue lisää</button>
+                        <Link to={"/yhteys"} className="contact-btn">Yhteydenotto</Link>
                     </div>
                     <div className="flex-right">
                         <div className="image-area">

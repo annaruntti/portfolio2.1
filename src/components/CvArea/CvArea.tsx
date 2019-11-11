@@ -1,5 +1,6 @@
 import * as React from "react";
 import ProfileImage from "../../images/profile.jpg";
+import Skills from "../Skills/Skills";
 import "./CvArea.scss";
 
 export default function CvArea() {
@@ -11,6 +12,8 @@ export default function CvArea() {
                         <div className="image-cropper">
                             <img className="header-image" src={ProfileImage} alt="My profile image" />
                         </div>
+                        <h1 className="profile-title">Anna Tiala</h1>
+                        <h3>CV 11.11.2019</h3><hr />
                         <h3>Yhteystiedot</h3>
                         <p>linkedin.com/in/annaruntti/<br />
                             suomenlapinkoira.net<br />
@@ -19,6 +22,7 @@ export default function CvArea() {
                             Haravatie 27<br />
                             90530 Oulu<br />
                             s. 6.4.1990</p>
+                        <Skills />
                     </div>
                     <div className="flex-item-right">
                         <h3>Koulutus</h3>

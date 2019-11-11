@@ -12,7 +12,7 @@ export default function CvBlock() {
                         <h2 className="cv-title">Ansioluetteloni</h2>
                         <p className="large-text">Käy lukemassa ansioluetteloni!<br />
                             Ansioluettelossani on listattu työkokemukseni, koulutukseni, taitoni ja harrastukseni.</p>
-                        <Link to={"/cv"} className="cv-btn">Lue lisää</Link>
+                        <Link to={"/cv"} className="cv-btn">Ansioluetteloon</Link>
                     </div>
                     <div className="flex-right">
                         <div className="image-area">
