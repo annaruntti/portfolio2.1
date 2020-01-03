@@ -31,13 +31,15 @@ export default function ContactView() {
                             </div>
                         </div>
                         <div className="flex-item-right">
-                            <div className="alert alert-info" role="alert">
-                                <h3>Ota yhteyttä!</h3>
-                                <p>Voit ottaa minuun yhteyttä oheisella formilla.</p>
+                            <div className="contact-form-area">
+                                <div className="alert alert-info" role="alert">
+                                    <h3>Ota yhteyttä!</h3>
+                                    <p>Voit ottaa minuun yhteyttä oheisella formilla.</p>
+                                </div>
+                                <ContactForm />
+                                {/* <CvLinkBlock /> */}
+                                {/* <PortfolioLinkBlock /> */}
                             </div>
-                            <ContactForm />
-                            {/* <CvLinkBlock /> */}
-                            {/* <PortfolioLinkBlock /> */}
                         </div>
                     </div>
                 </div>

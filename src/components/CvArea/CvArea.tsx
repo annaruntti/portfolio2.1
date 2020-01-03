@@ -1,9 +1,18 @@
 import * as React from "react";
 import ProfileImage from "../../images/profile.jpg";
 import Skills from "../Skills/Skills";
+import ExpandLessIcon from '@material-ui/icons/ExpandLess';
+import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import "./CvArea.scss";
 
-export default function CvArea() {
+// export interface EventHandlerProps {
+//     onClick: (e: React.MouseEvent) => void
+// }
+
+export default function CvArea({ onClick }: any) {
+    function onFocus(e: React.FocusEvent) {
+        console.log('Focused!', e.currentTarget)
+    }
     return (
         <div className="cv-area">
             <div className="container">
@@ -14,7 +23,7 @@ export default function CvArea() {
                         </div>
                         <h1 className="profile-title">Anna Tiala</h1>
                         <h3>CV 11.11.2019</h3><hr />
-                        <h3>Yhteystiedot</h3>
+                        <h3 className="contact-title">Yhteystiedot</h3>
                         <p>linkedin.com/in/annaruntti/<br />
                             suomenlapinkoira.net<br />
                             anruntti@gmail.com<br />
@@ -25,19 +34,23 @@ export default function CvArea() {
                         <Skills />
                     </div>
                     <div className="flex-item-right">
-                        <h3>Koulutus</h3>
-                        <p><b>Tietojenkäsittelytieteiden opintoja, Oulun yliopisto, Sähkö- ja tietotekniikan tiedekunta</b><br />
-                            - Pääaine: Tietojenkäsittelytieteet, 2010-2018<br />
-                            - Sivuaine: Elokuva-analyysi, humanistinen tiedekunta, 2015<br />
-                            - Sivuaine: Johtaminen, Oulun yliopiston kauppakorkeakoulu, 2013</p>
-
-                        <p>Ylioppilas, 2009, Kiimingin lukio</p>
-
-                        <h3>Työkokemus</h3>
+                        <div className="flex-title-row">
+                            <h3>Työkokemus</h3>
+                            <div className="icon-item">
+                                <button
+                                    onClick={() => { onClick() }}
+                                    onFocus={onFocus}
+                                    onKeyDown={e => {
+                                        // When using an inline function, the appropriate argument signature
+                                        // is provided for us
+                                    }}
+                                    className="show-content-btn"><ExpandLessIcon /></button>
+                            </div>
+                        </div>
 
                         <p><b>Siili Solutions Oyj 04/2018 -> nykyhetki, Web developer, konsultti</b><br />
                             Työskentely konsulttina asiakasprojekteissa toimien full-stack web-kehittäjän tehtävissä. Lisäksi käytettävyys- ja käyttökokemussunnittelutehtäviä. Käytetyt teknologiat mm. React.js, Ramda.js, JavaScript, NodeJS, PostgreSQL, Java, React Native.
-                        </p>
+                            </p>
 
                         <p><b>Koodiviidakko Oy, 10/2017-04/2018, Front-end Developer</b><br />
                             Työskentely asiakasprojekteissa, tehtävinä web-sivujen ja sivustojen luominen käyttäen sisäistä Sivuviidakko -nimistä CMS:ää. Käytettyinä teknologioina HTML5, SCSS, JavaScript ja JQuery</p>
@@ -54,10 +67,28 @@ export default function CvArea() {
                         <p><b>Tulikurkku Oy, 08/2009-05/2015, Myyjä, kokki, pääluottamusmies</b><br />
                             Elintarvikkeiden myynti ja valmistustehtävät. Vastuualueitani olivat myös mm. inventaarioiden hallinta. Lisäksi toimiminen yrityksen pääluottamusmiehenä.</p>
 
-                        <h3>Vastuutehtävät</h3>
+                        <div className="flex-title-row">
+                            <h3>Koulutus</h3>
+                            <div className="icon-item">
+                                <button className="show-content-btn"><ExpandMoreIcon /></button>
+                            </div>
+                        </div>
+                        <p><b>Tietojenkäsittelytieteiden opintoja, Oulun yliopisto, Sähkö- ja tietotekniikan tiedekunta</b><br />
+                            - Pääaine: Tietojenkäsittelytieteet, 2010-2018<br />
+                            - Sivuaine: Elokuva-analyysi, humanistinen tiedekunta, 2015<br />
+                            - Sivuaine: Johtaminen, Oulun yliopiston kauppakorkeakoulu, 2013</p>
+
+                        <p>Ylioppilas, 2009, Kiimingin lukio</p>
+
+                        <div className="flex-title-row">
+                            <h3>Vastuutehtävät</h3>
+                            <div className="icon-item">
+                                <button className="show-content-btn"><ExpandMoreIcon /></button>
+                            </div>
+                        </div>
                         <p>TIVIA Oulu (Pohjois-Pohjanman tietojenkäsittely-yhdistys), puheenjohtaja 2019, varapuheenjohtaja 2018, puheenjohtaja 2017, varapuheenjohtaja 2016<br />
                             TIVIA Oulu (entinen Potky ry) Tivia Oulu eli aiemmalta nimeltään POTKY ry on Tietotekniikan Liiton alainen itsenäinen jäsenyhdistys, jonka nykyinen jäsenmäärä on yli 200 henkilöä. TIVIA Oulun kantavana toiminta-ajatuksena on ollut aina sen perustamisesta saakka toimia tietotekniikan parissa työskentelevien yksityisten henkilöiden ja yhteisöjen yhdyssiteenä Pohjois-Pohjanmaalla ja edistää tietotekniikan mahdollisimman tehokasta hyväksikäyttöä.
-                            Tavoitteensa toteuttamiseksi yhdistys järjestää kokouksia, koulutustilaisuuksia, seminaareja sekä tutustumismatkoja yhdistyksen jäsenten ammatillista toimintaa edistäviin organisaatioihin.</p>
+                                Tavoitteensa toteuttamiseksi yhdistys järjestää kokouksia, koulutustilaisuuksia, seminaareja sekä tutustumismatkoja yhdistyksen jäsenten ammatillista toimintaa edistäviin organisaatioihin.</p>
 
                         <p>Oulun luonnontieteilijät ry, Suhdevastaava, 2016<br />
                             Oulun luonnontieteilijät ry on kattojärjestö Oulun yliopiston ainejärjestöille. Sudevastaavana tehtäviini kuului organisaation suhteista, yhteystyökumppanuuksista ja PR:sta vastaaminen.</p>
@@ -68,7 +99,12 @@ export default function CvArea() {
                         <p>Blanko ry, Suhdevastaava, 2013-2014<br />
                             Suhdevastaava on yksi Blankon hallituksen jäsenistä. Suhdevastaava vastaa järjestön yhteistyökumppanuuksista ja niiden hankkimisesta. Blankon toiminta rahoitetaan pitkälti yritysyhteystyösopimuksista saatavilla varoilla. Suhdevastaavana kehitin Blankon yhteystyökumppanuuksia vastaamaan nykyistä mallia, joka on todettu erittäin kannattavaksi niin yrityksille, Blankon taloudelle, kuin Blankon jäsenillekin.</p>
 
-                        <h3>Harrastukset</h3>
+                        <div className="flex-title-row">
+                            <h3>Harrastukset</h3>
+                            <div className="icon-item">
+                                <button className="show-content-btn"><ExpandMoreIcon /></button>
+                            </div>
+                        </div>
                         <p>Tärkeimmät harrastukseni liittyvät koiraharrastuksiini. Pyöritän pientä kotikenneliä, jossa kasvatan suomenlapinkoiria kennelnimellä Hallakedon. Koirieni kanssa harrastan agilitya, tokoa, lammaspaimennusta ja näyttelyitä. Lisäksi harrastan muita liikunnallisia harrastuksia, kuten nyrkkeilyä ja käyn kuntosalilla. Harrastan myös paljon alaani liittyvää itseni kehittämistä vapaa-ajalla. Minulla on useita websivu projekteja, joiden avulla haluan opetella uusia teknologioita. Lisäksi teen paljon graafisia töitä ja piirrän ja maalaan jonkin verran vapaa-ajalla.</p>
                     </div>
                 </div>

@@ -24,6 +24,10 @@
     display: block;
 }
 
+.contact-form-area {
+    width: 100%;
+}
+
 @media (min-width: 536px) {
     .contact-area .info-details {
         display: flex;
@@ -41,5 +45,11 @@
 
     .contact-area .info-details {
         display: block;
+    }
+
+    .contact-form-area {
+        padding-top: 2rem;
+        width: 80%;
+        margin-left: auto;
     }
 }
