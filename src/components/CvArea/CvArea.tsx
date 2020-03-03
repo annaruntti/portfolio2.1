@@ -1,14 +1,11 @@
 import React, { Component, MouseEvent } from "react";
 import ProfileImage from "../../images/profile.jpg";
 import Skills from "../Skills/Skills";
+import CvContentWork from "../CvContentWork/CvContentWork"
 import ExpandLessIcon from '@material-ui/icons/ExpandLess';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import "./CvArea.scss";
 
-// export interface EventHandlerProps {
-//     onClick: (e: React.MouseEvent) => void
-// }
-// export default function CvView() {
 export default class CvArea extends React.Component {
     handleClick(e: MouseEvent<HTMLButtonElement>) {
         e.preventDefault();
@@ -48,26 +45,7 @@ export default class CvArea extends React.Component {
                                     className="show-content-btn">{this.props.children}<ExpandLessIcon /></button>
                             </div>
                         </div>
-                        <div className="show-content-work">
-                            <p><b>Siili Solutions Oyj 04/2018 -> nykyhetki, Web developer, konsultti</b><br />
-                                Työskentely konsulttina asiakasprojekteissa toimien full-stack web-kehittäjän tehtävissä. Lisäksi käytettävyys- ja käyttökokemussunnittelutehtäviä. Käytetyt teknologiat mm. React.js, Ramda.js, JavaScript, NodeJS, PostgreSQL, Java, React Native.
-                                </p>
-
-                            <p><b>Koodiviidakko Oy, 10/2017-04/2018, Front-end Developer</b><br />
-                                Työskentely asiakasprojekteissa, tehtävinä web-sivujen ja sivustojen luominen käyttäen sisäistä Sivuviidakko -nimistä CMS:ää. Käytettyinä teknologioina HTML5, SCSS, JavaScript ja JQuery</p>
-
-                            <p><b>Koodiviidakko Oy, 10/2016-10/2017, Junior Front-end Developer</b><br />
-                                Työskentely asiakasprojekteissa, tehtävinä web-sivujen ja sivustojen luominen käyttäen sisäistä Sivuviidakko -nimistä CMS:ää. Osan ajasta työskentelin kansainvälisessä tiimissä kansainvälisten asiakkuuksien ja työtovereiden kanssa. Lisäksi suunnittelin uutiskirjeiden ulkoasuja.</p>
-
-                            <p><b>Koodiviidakko Oy, 09/2016-10/2016, Front-end Developer Trainee</b><br />
-                                Työskentely asiakasprojekteissa, tehtävinä uutiskirjeiden luominen käyttäen sisäistä Postiviidakkoviidakko -nimistä työkalua. Lisäksi rakensin web-sivuja käyttäen sisäistä Sivuviidakko -nimistä CMS:ää. Käytetyt teknologiat HTML and CSS. Lisäksi suunnittelin uutiskirjeiden ulkoasuja.</p>
-
-                            <p><b>Nokia Networks, 05/2016-08/2016, 05/2015-08/2015, 05/2014-09/2014, 06/2013-08/2013 and 06/2011-08/2011, Seasonal trainee</b><br />
-                                Tuotannon työtehtävät tiimin kanssa. Eloktroniikkatyöntekijän tehtävät sekä laaduntarkastustehtävät.</p>
-
-                            <p><b>Tulikurkku Oy, 08/2009-05/2015, Myyjä, kokki, pääluottamusmies</b><br />
-                                Elintarvikkeiden myynti ja valmistustehtävät. Vastuualueitani olivat myös mm. inventaarioiden hallinta. Lisäksi toimiminen yrityksen pääluottamusmiehenä.</p>
-                        </div>
+                        <CvContentWork/>
                         <div className="flex-title-row">
                             <h3>Koulutus</h3>
                             <div className="icon-item">
