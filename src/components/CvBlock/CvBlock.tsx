@@ -1,12 +1,14 @@
 import * as React from "react";
 import CvImage from "../../images/work.png";
 import { Link } from "react-router-dom";
+import IntroductionBlock from "../IntroductionBlock/IntroductionBlock";
 import "./CvBlock.scss";
 
 export default function CvBlock() {
     return (
         <div className="cv-block">
             <div className="container">
+            <IntroductionBlock />
                 <div className="flex-row">
                     <div className="flex-left">
                         <h2 className="cv-title">Ansioluetteloni</h2>
