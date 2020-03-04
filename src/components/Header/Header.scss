@@ -10,8 +10,8 @@
     background-color: #E7498A;
     position: relative;
     overflow: hidden;
-    max-width: 70px;
-    max-height: 70px;
+    max-width: 65px;
+    max-height: 65px;
     border-radius: 50%;
     z-index: 900;
     top: -9px;
@@ -103,5 +103,10 @@
 
     .header-text-area {
         padding: 3rem 0;
+    }
+
+    .header .image-cropper {
+        max-width: 70px;
+        max-height: 70px;
     }
 }
