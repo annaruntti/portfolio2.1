@@ -4,7 +4,6 @@ import Header from "./components/Header/Header";
 import Main from "./components/Main/Main";
 import CvView from "./components/CvView/CvView";
 import ContactView from "./components/ContactView/ContactView";
-import ReactDOM from 'react-dom';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import './App.scss';
 
@@ -14,13 +13,13 @@ function App() {
       <div className="App">
         <Header />
         <div className="main-app">
-          <Route exact path="/" component={Main}>
+          <Route exact path="/">
             <Main />
           </Route>
-          <Route exact path="/cv" component={CvView}>
+          <Route exact path="/cv">
             <CvView />
           </Route>
-          <Route exact path="/yhteys" component={CvView}>
+          <Route exact path="/yhteys">
             <ContactView />
           </Route>
         </div>
