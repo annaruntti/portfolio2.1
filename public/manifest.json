@@ -7,9 +7,15 @@
       "type": "image/x-icon"
     },
     {
-      "src": "logo192.png",
+      "src": "at-logo.png",
       "type": "image/png",
-      "sizes": "192x192"
+      "sizes": "108x120"
+    },
+    {
+      "src": "at-logo.png",
+      "type": "image/png",
+      "sizes": "108x120",
+      "purpose": "maskable"
     },
     {
       "src": "logo512.png",
