@@ -1,7 +1,9 @@
 import React, { Component, MouseEvent } from "react";
-import PortfolioContentPhotography from "../PortfolioContentPhotography/PortfolioContentPhotography"
 import ExpandLessIcon from '@material-ui/icons/ExpandLess';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
+
+import PortfolioContentPhotography from "../PortfolioContentPhotography/PortfolioContentPhotography"
+import PortfolioContentDesign from "../PortfolioContentDesign/PortfolioContentDesign"
 import "./PortfolioArea.scss";
 
 export default class PortfolioArea extends React.Component {
@@ -24,10 +26,21 @@ export default class PortfolioArea extends React.Component {
                         <div className="icon-item">
                             <button
                                 onClick={this.handleClick}
-                                className="show-content-btn">{this.props.children}<ExpandLessIcon /></button>
+                                className="show-content-btn">{this.props.children}<ExpandLessIcon />
+                            </button>
                         </div>
                     </div>
                     <PortfolioContentPhotography/>
+                    <div className="flex-title-row">
+                        <h3>Design ja grafiikka</h3>
+                        <div className="icon-item">
+                            <button
+                                onClick={this.handleClick}
+                                className="show-content-btn">{this.props.children}<ExpandLessIcon />
+                            </button>
+                        </div>
+                    </div>
+                    <PortfolioContentDesign/>
                 </div>
             </div>
         );
