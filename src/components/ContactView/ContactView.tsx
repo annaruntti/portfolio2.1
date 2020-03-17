@@ -35,6 +35,7 @@ export default function ContactView() {
                                 <div className="alert alert-info" role="alert">
                                     <h3>Ota yhteyttä!</h3>
                                     <p>Voit ottaa minuun yhteyttä oheisella formilla.</p>
+                                    <p>Huom. päivitys 17.3.2020, yhteydenottolomake ei toimi juuri nyt, otathan yhteyttä sähköpostitse.</p>
                                 </div>
                                 <ContactForm />
                                 {/* <CvLinkBlock /> */}
