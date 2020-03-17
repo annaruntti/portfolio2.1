@@ -17,6 +17,11 @@
     margin: 0.25rem;
 }
 
+.image-coverphoto-wrapper {
+    margin: 0.25rem;
+    width: 100%;
+}
+
 .project-box img {
     width: 100%;
 }
@@ -35,6 +40,19 @@
     box-shadow: 0px 2px 2px rgba(74, 74, 74, 0.8);
 }
 
+.paint-images {
+    width: 100%; 
+}
+
+.image-card-wrapper {
+    width: 100%;
+    margin: 0.25rem;
+}
+
+.image-paint-wrapper {
+    margin: 0.25rem;
+}
+
 @media (min-width: 767px) {
     .row {
         display: flex;
@@ -42,6 +60,18 @@
 
     .logo-image {
         text-align: left;
+    }
+
+    .image-coverphoto-wrapper {
+        width: 50%;
+    }
+
+    .paint-images {
+        width: 50%; 
+    }
+
+    .image-card-wrapper {
+        width: 50%;
     }
 }
 
