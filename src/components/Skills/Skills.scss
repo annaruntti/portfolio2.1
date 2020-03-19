@@ -1,0 +1,19 @@
+.skills .row {
+  display: flex;
+}
+
+.skill-block {
+  margin-right: 1rem;
+  width: 50%;
+}
+
+@media (min-width: 768px) {
+  .skills .row {
+    display: grid;
+  }
+
+  .skill-block {
+    margin-right: 1rem;
+    width: 100%;
+  }
+}

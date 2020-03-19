@@ -7,13 +7,9 @@
   display: grid;
 }
 
-// .flex-item-left {
-//   padding: 1rem;
-// }
-
-// .flex-item-right {
-//   padding: 1rem;
-// }
+.flex-item-left {
+  padding: 0.5rem;
+}
 
 .cv-area .image-cropper {
   position: relative;
@@ -46,7 +42,7 @@
 }
 
 .show-content-btn {
-  background-color: #e7498a;
+  background-color: #00ad95;
   border-radius: 50%;
   height: 40px;
   width: 40px;
@@ -62,6 +58,10 @@
   margin-right: auto;
 }
 
+hr {
+  margin-right: 1.5rem;
+}
+
 @media (min-width: 768px) {
   .cv-area .flex-row {
     display: flex;
@@ -75,5 +75,9 @@
   .flex-item-right {
     padding: 2rem;
     width: 70%;
+  }
+
+  hr {
+    margin-right: 0;
   }
 }
