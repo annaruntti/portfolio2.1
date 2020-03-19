@@ -1,17 +1,21 @@
+.show-content-photos {
+  margin-bottom: 1.5rem;
+}
+
 .row {
-    display: grid;
+  display: grid;
 }
 
 .imagebox {
-    background-color: #fff;
-    padding: 0.5rem 0.5rem 0.25rem;
-    box-shadow: 0px 2px 2px rgba(74, 74, 74, 0.8);
-    margin: 0.5rem;
-    width: 100%;
+  background-color: #fff;
+  padding: 0.5rem 0.5rem 0.25rem;
+  box-shadow: 0px 2px 2px rgba(74, 74, 74, 0.8);
+  margin: 0.5rem;
+  width: 100%;
 }
 
 .imagebox img {
-    width: 100%;
+  width: 100%;
 }
 
 // .intrinsic-item {
@@ -24,39 +28,39 @@
 
 /* Animations */
 .animated {
-    -webkit-animation-duration: 0.4s;
-    animation-duration: 0.4s;
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both;
-  }
-  
-  @-webkit-keyframes fadeIn {
-    from {
-      opacity: 0;
-    }
-  
-    to {
-      opacity: 1;
-    }
-  }
-  
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-    }
-  
-    to {
-      opacity: 1;
-    }
-  }
-  
-  .fadeIn {
-    -webkit-animation-name: fadeIn;
-    animation-name: fadeIn;
+  -webkit-animation-duration: 0.4s;
+  animation-duration: 0.4s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
   }
 
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+}
+
 @media (min-width: 767px) {
-    .row {
-        display: flex;
-    }
+  .row {
+    display: flex;
+  }
 }

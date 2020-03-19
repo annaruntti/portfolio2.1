@@ -1,116 +1,120 @@
+.show-content-design {
+  margin-bottom: 1.5rem;
+}
+
 .project-box {
-    background-color: #fff;
-    padding: 1.5rem;
-    box-shadow: 0px 2px 2px rgba(74, 74, 74, 0.8);
-    margin: 0.5rem;
+  background-color: #fff;
+  padding: 1.5rem;
+  box-shadow: 0px 2px 2px rgba(74, 74, 74, 0.8);
+  margin: 0.5rem;
 }
 
 .project-box h4 {
-    margin-top: 0;
+  margin-top: 0;
 }
 
 .row {
-    display: grid;
+  display: grid;
 }
 
 .image-wrapper {
-    margin: 0.25rem;
-    width: 100%;
+  margin: 0.25rem;
+  width: 100%;
 }
 
 .image-coverphoto-wrapper {
-    margin: 0.25rem;
-    width: 100%;
+  margin: 0.25rem;
+  width: 100%;
 }
 
 .project-box img {
-    width: 100%;
+  width: 100%;
 }
 
 .logo-image img {
-    width: 70%;
-    margin: 0.25rem;
+  width: 70%;
+  margin: 0.25rem;
 }
 
 .logo-image {
-    text-align: center;
-    margin-bottom: 1rem;
+  text-align: center;
+  margin-bottom: 1rem;
 }
 
 .litterplan-image {
-    box-shadow: 0px 2px 2px rgba(74, 74, 74, 0.8);
+  box-shadow: 0px 2px 2px rgba(74, 74, 74, 0.8);
 }
 
 .paint-images {
-    width: 100%; 
+  width: 100%;
 }
 
 .image-card-wrapper {
-    width: 100%;
-    margin: 0.25rem;
+  width: 100%;
+  margin: 0.25rem;
 }
 
 .image-paint-wrapper {
-    margin: 0.25rem;
+  margin: 0.25rem;
 }
 
 /* Animations */
 .animated {
-    -webkit-animation-duration: 0.4s;
-    animation-duration: 0.4s;
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both;
+  -webkit-animation-duration: 0.4s;
+  animation-duration: 0.4s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
 }
 
 @-webkit-keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
+  from {
+    opacity: 0;
+  }
 
-    to {
-        opacity: 1;
-    }
+  to {
+    opacity: 1;
+  }
 }
 
 @keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
+  from {
+    opacity: 0;
+  }
 
-    to {
-        opacity: 1;
-    }
+  to {
+    opacity: 1;
+  }
 }
 
 .fadeIn {
-    -webkit-animation-name: fadeIn;
-    animation-name: fadeIn;
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
 }
 
 @media (min-width: 767px) {
-    .row {
-        display: flex;
-    }
+  .row {
+    display: flex;
+  }
 
-    .logo-image {
-        text-align: left;
-    }
+  .logo-image {
+    text-align: left;
+  }
 
-    .image-coverphoto-wrapper {
-        width: 50%;
-    }
+  .image-coverphoto-wrapper {
+    width: 50%;
+  }
 
-    .paint-images {
-        width: 50%; 
-    }
+  .paint-images {
+    width: 50%;
+  }
 
-    .image-card-wrapper {
-        width: 50%;
-    }
+  .image-card-wrapper {
+    width: 50%;
+  }
 }
 
 @media (min-width: 992px) {
-    .text-introduction {
-        padding-top: 1rem;
-    }
+  .text-introduction {
+    padding-top: 1rem;
+  }
 }

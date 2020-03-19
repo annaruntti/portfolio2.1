@@ -31,7 +31,7 @@ const PortfolioAreaBlock: React.FC<BlockProps> = ({
   const [isOpen, setIsOpen] = React.useState(open);
 
   return (
-    <>
+    <div className="content-block">
       <div className="flex-title-row">
         <h3>{title}</h3>
         <div className="icon-item">
@@ -46,7 +46,7 @@ const PortfolioAreaBlock: React.FC<BlockProps> = ({
       <div className={isOpen ? classes.showContent : classes.hideContent}>
         {children}
       </div>
-    </>
+    </div>
   );
 };
 
