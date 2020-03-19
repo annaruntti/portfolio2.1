@@ -2,6 +2,8 @@ import * as React from "react";
 import { LazyImage } from "react-lazy-images";
 
 import ATLogo from "../../images/logo-pyorea.png";
+import Placeholder1 from "../../images/placeholder-small.png";
+import Placeholder2 from "../../images/placeholder2-small.png";
 import PuppyStartImage from "../../images/puppy-start-view.png";
 import PuppyLogo from "../../images/dog-logo-sircle.png";
 import AddLitterImage from "../../images/puppy-add-litter.png";
@@ -43,34 +45,31 @@ export default function PortfolioContentDesign() {
                 <div className="image-box">
                     <div className="row">
                         <div className="image-wrapper">
-                            {/* <img src={PuppyStartImage} alt="Web site layout" /> */}
                             <LazyImage
                                 src={PuppyStartImage}
                                 alt="Web site layout"
                                 placeholder={({ imageProps, ref }) => (
-                                    <img ref={ref} src={ATLogo} alt={imageProps.alt} />
+                                    <img className="intrinsic-item animated fadeIn" ref={ref} src={Placeholder2} alt={imageProps.alt} />
                                 )}
                                 actual={({ imageProps }) => <img {...imageProps} />}
                             />
                         </div>
                         <div className="image-wrapper">
-                            {/* <img src={PuppyFrontPage} alt="Web site layout" /> */}
                             <LazyImage
                                 src={PuppyFrontPage}
                                 alt="Web site layout"
                                 placeholder={({ imageProps, ref }) => (
-                                    <img ref={ref} src={ATLogo} alt={imageProps.alt} />
+                                    <img className="intrinsic-item animated fadeIn" ref={ref} src={Placeholder2} alt={imageProps.alt} />
                                 )}
                                 actual={({ imageProps }) => <img {...imageProps} />}
                             />
                         </div>
                         <div className="image-wrapper">
-                            {/* <img src={AddLitterImage} alt="Web site layout" /> */}
                             <LazyImage
                                 src={AddLitterImage}
                                 alt="Web site layout"
                                 placeholder={({ imageProps, ref }) => (
-                                    <img ref={ref} src={ATLogo} alt={imageProps.alt} />
+                                    <img className="intrinsic-item animated fadeIn" ref={ref} src={Placeholder2} alt={imageProps.alt} />
                                 )}
                                 actual={({ imageProps }) => <img {...imageProps} />}
                             />
@@ -78,34 +77,31 @@ export default function PortfolioContentDesign() {
                     </div>
                     <div className="row">
                         <div className="image-wrapper">
-                            {/* <img src={AddPuppysImage} alt="Web site layout" /> */}
                             <LazyImage
                                 src={AddPuppysImage}
                                 alt="Web site layout"
                                 placeholder={({ imageProps, ref }) => (
-                                    <img ref={ref} src={ATLogo} alt={imageProps.alt} />
+                                    <img className="intrinsic-item animated fadeIn" ref={ref} src={Placeholder2} alt={imageProps.alt} />
                                 )}
                                 actual={({ imageProps }) => <img {...imageProps} />}
                             />
                         </div>
                         <div className="image-wrapper">
-                            {/* <img src={LitterDataImage} alt="Web site layout" /> */}
                             <LazyImage
                                 src={LitterDataImage}
                                 alt="Web site layout"
                                 placeholder={({ imageProps, ref }) => (
-                                    <img ref={ref} src={ATLogo} alt={imageProps.alt} />
+                                    <img className="intrinsic-item animated fadeIn" ref={ref} src={Placeholder2} alt={imageProps.alt} />
                                 )}
                                 actual={({ imageProps }) => <img {...imageProps} />}
                             />
                         </div>
                         <div className="image-wrapper">
-                            {/* <img src={MarkWeightImage} alt="Web site layout" /> */}
                             <LazyImage
                                 src={MarkWeightImage}
                                 alt="Web site layout"
                                 placeholder={({ imageProps, ref }) => (
-                                    <img ref={ref} src={ATLogo} alt={imageProps.alt} />
+                                    <img className="intrinsic-item animated fadeIn" ref={ref} src={Placeholder2} alt={imageProps.alt} />
                                 )}
                                 actual={({ imageProps }) => <img {...imageProps} />}
                             />
