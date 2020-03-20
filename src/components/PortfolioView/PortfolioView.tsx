@@ -4,10 +4,10 @@ import PortfolioArea from "../PortfolioArea/PortfolioArea";
 import "./PortfolioView.scss";
 
 export default function PortfolioView() {
-    return (
-        <div className="portfolio-view">
-            <PortfolioTitleBlock />
-            <PortfolioArea />
-        </div>
-    )
+  return (
+    <div className="portfolio-view">
+      <PortfolioTitleBlock />
+      <PortfolioArea />
+    </div>
+  );
 }

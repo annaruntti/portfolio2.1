@@ -5,11 +5,11 @@ import ContactBlock from "../ContactBlock/ContactBlock";
 import "./Main.scss";
 
 export default function Main() {
-    return (
-        <div className="main-view">      
-            <CvBlock />
-            <PortfolioBlock />
-            <ContactBlock />
-        </div>
-    )
+  return (
+    <div className="main-view">
+      <CvBlock />
+      <PortfolioBlock />
+      <ContactBlock />
+    </div>
+  );
 }

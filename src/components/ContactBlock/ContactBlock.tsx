@@ -4,23 +4,29 @@ import { Link } from "react-router-dom";
 import "./ContactBlock.scss";
 
 export default function ContactBlock() {
-    return (
-        <div className="contact-block">
-            <div className="container">
-                <div className="flex-row">
-                    <div className="flex-left">
-                        <h2 className="cv-title">Ota yhteyttä!</h2>
-                        <p className="large-text">Kiinnostuitko?<br />
-                            Yhteystiedot -sivulta löydät yhteystietoni, sekä yhteydenottolomakkeen, jolla voit lähettää minulle sähköpostia.</p>
-                        <Link to={"/yhteys"} className="contact-btn">Yhteydenotto</Link>
-                    </div>
-                    <div className="flex-right">
-                        <div className="image-area">
-                            <img className="contact-image" src={ContactImage} alt="" />
-                        </div>
-                    </div>
-                </div>
+  return (
+    <div className="contact-block">
+      <div className="container">
+        <div className="flex-row">
+          <div className="flex-left">
+            <h2 className="cv-title">Ota yhteyttä!</h2>
+            <p className="large-text">
+              Kiinnostuitko?
+              <br />
+              Yhteystiedot -sivulta löydät yhteystietoni, sekä
+              yhteydenottolomakkeen, jolla voit lähettää minulle sähköpostia.
+            </p>
+            <Link to={"/yhteys"} className="contact-btn">
+              Yhteydenotto
+            </Link>
+          </div>
+          <div className="flex-right">
+            <div className="image-area">
+              <img className="contact-image" src={ContactImage} alt="" />
             </div>
+          </div>
         </div>
-    )
+      </div>
+    </div>
+  );
 }
