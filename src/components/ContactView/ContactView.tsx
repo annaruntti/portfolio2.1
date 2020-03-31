@@ -23,17 +23,14 @@ export default function ContactView() {
                   <p>
                     linkedin.com/in/annaruntti/
                     <br />
-                    suomenlapinkoira.net
+                    https://github.com/annaruntti
                     <br />
                     anruntti@gmail.com
                     <br />
                     +358452346943
                     <br />
-                    Haravatie 27
+                    Oulu, Suomi
                     <br />
-                    90530 Oulu
-                    <br />
-                    s. 6.4.1990
                   </p>
                 </div>
               </div>

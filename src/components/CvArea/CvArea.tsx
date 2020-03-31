@@ -70,21 +70,21 @@ const CvArea: React.FC<Props> = () => {
             <h1 className="profile-title">Anna Tiala</h1>
             <h3>CV 11.11.2019</h3>
             <hr />
-            <h3 className="contact-title">Yhteystiedot</h3>
             <p>
               linkedin.com/in/annaruntti/
               <br />
-              suomenlapinkoira.net
+              github.com/annaruntti
+              <br />
+              suomenlapinkoira.net/
               <br />
               anruntti@gmail.com
               <br />
               +358452346943
               <br />
-              Haravatie 27
+              Oulu, Suomi
               <br />
-              90530 Oulu
+              s. 1990
               <br />
-              s. 6.4.1990
             </p>
             <Skills />
           </div>
