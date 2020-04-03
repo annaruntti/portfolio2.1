@@ -10,11 +10,12 @@ export default function CvContentWork() {
         </b>
         <br />
         Työskentely konsulttina eri asiakasprojekteissa toimien mm. front-end
-        -kehittäjänä, full-stack web-kehittäjän sekä lisäksi käytettävyys- ja
-        käyttökokemussunnittelutehtäviä. Käytetyt teknologiat mm. React.js,
-        Ramda.js, JavaScript, NodeJS, PostgreSQL, Java, React Native.
-        Asiakkuuksieni toimialoina ovat olleet mm. finanssi- ja vakuutusala,
-        koulutus/oppilaitokset, autoteollisuus ja henkilöstöhallinta.
+        -kehittäjänä, full-stack web-kehittäjänä sekä lisäksi käytettävyys- ja
+        käyttökokemussunnittelun tehtävissä. Käytetyt teknologiat mm.
+        JavaScript, TypeScript, React.js, Ramda.js, NodeJS, Express.js,
+        PostgreSQL, Java, AWS, React Native. Asiakkuuksieni toimialoina ovat
+        olleet mm. finanssi- ja vakuutusala, koulutus/oppilaitokset,
+        autoteollisuus ja henkilöstöhallinta.
       </p>
       <p>
         <b>Koodiviidakko Oy, 10/2017-04/2018, Front-end Developer</b>
