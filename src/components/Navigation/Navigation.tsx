@@ -6,6 +6,9 @@ export default function Navigation() {
   return (
     <div className="navigation">
       <div className="container">
+        <a className="to-content-link" href="#main-content">
+          Siirry sisältöön
+        </a>
         <ul className="menu">
           <li>
             <Link to={"/"}>Etusivu</Link>

@@ -20,3 +20,21 @@
   text-shadow: 2px 2px #4a4a4a;
   font-size: 24px;
 }
+
+.to-content-link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0.8rem 1.6rem;
+  color: #e7498a;
+  background: #fff;
+  transform: translateY(-100%);
+  transition: 0.2s transform cubic-bezier(0.175, 0.885, 0.32, 1.02);
+  opacity: 0;
+  z-index: 4;
+}
+
+.to-content-link:focus {
+  transform: translateY(0);
+  opacity: 1;
+}

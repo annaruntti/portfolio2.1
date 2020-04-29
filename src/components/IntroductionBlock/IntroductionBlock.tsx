@@ -1,10 +1,14 @@
 import * as React from "react";
 import "./IntroductionBlock.scss";
 
-export default function IntroductionBlock() {
+interface BlockProps {
+  // id: string;
+}
+
+const IntroductionBlock: React.FC<BlockProps> = () => {
   return (
     <div className="introduction-block">
-      <h1>"Minä oon Anna ja mää tykkään koodata."</h1>
+      <h1 id="main-content">"Minä oon Anna ja mää tykkään koodata."</h1>
       <p className="ingress">
         Olen 30-vuotias, oppimaan innokas koodari Anna ja hurahtanut pahasti
         myös käytettävyys- ja käyttökokemussuunnitteluun, saavutettavuuteen ja
@@ -21,4 +25,6 @@ export default function IntroductionBlock() {
       <p>English version of my portfolio coming soon!</p>
     </div>
   );
-}
+};
+
+export default IntroductionBlock;
