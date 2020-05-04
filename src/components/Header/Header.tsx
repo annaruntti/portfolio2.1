@@ -5,9 +5,9 @@ import "./Header.scss";
 
 export default function Header() {
   return (
-    <div>
+    <React.Fragment>
       <Navigation />
-      <div className="header">
+      <header>
         <div className="container">
           <div className="header-text-area">
             <div className="flex-row">
@@ -23,7 +23,7 @@ export default function Header() {
             <h1 className="header-title">Portfolio</h1>
           </div>
         </div>
-      </div>
-    </div>
+      </header>
+    </React.Fragment>
   );
 }

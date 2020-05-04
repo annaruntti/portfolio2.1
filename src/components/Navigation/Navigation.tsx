@@ -4,7 +4,7 @@ import "./Navigation.scss";
 
 export default function Navigation() {
   return (
-    <div className="navigation">
+    <nav>
       <div className="container">
         <a className="to-content-link" href="#main-content">
           Siirry sisältöön
@@ -24,6 +24,6 @@ export default function Navigation() {
           </li>
         </ul>
       </div>
-    </div>
+    </nav>
   );
 }

@@ -8,7 +8,7 @@ interface BlockProps {
 const IntroductionBlock: React.FC<BlockProps> = () => {
   return (
     <div className="introduction-block">
-      <h1 id="main-content">"Minä oon Anna ja mää tykkään koodata."</h1>
+      <h1>"Minä oon Anna ja mää tykkään koodata."</h1>
       <p className="ingress">
         Olen 30-vuotias, oppimaan innokas koodari Anna ja hurahtanut pahasti
         myös käytettävyys- ja käyttökokemussuunnitteluun, saavutettavuuteen ja

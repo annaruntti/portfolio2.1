@@ -1,4 +1,4 @@
-.header {
+header {
   padding: 1rem 0.5rem 0;
   position: relative;
   height: 428px;
@@ -7,7 +7,7 @@
   background-position: 26% 14%;
 }
 
-.header .image-cropper {
+header .image-cropper {
   background-color: #e7498a;
   position: relative;
   overflow: hidden;
@@ -49,11 +49,11 @@
   text-shadow: 2px 2px #4a4a4a;
 }
 
-.header .flex-left {
+header .flex-left {
   width: 35%;
 }
 
-.header .flex-right {
+header .flex-right {
   width: 65%;
   display: flex;
   flex-direction: column;
@@ -85,7 +85,7 @@
     top: 20px;
   }
 
-  .header .image-cropper {
+  header .image-cropper {
     top: 20px;
   }
 
@@ -97,7 +97,7 @@
 }
 
 @media (min-width: 992px) {
-  .header {
+  header {
     width: 99%;
   }
 
@@ -105,7 +105,7 @@
     padding: 3rem 0;
   }
 
-  .header .image-cropper {
+  header .image-cropper {
     max-width: 70px;
     max-height: 70px;
   }
