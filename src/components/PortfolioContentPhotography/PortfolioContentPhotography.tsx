@@ -1,7 +1,6 @@
 import * as React from "react";
 import { LazyImage } from "react-lazy-images";
 
-import ATLogo from "../../images/logo-pyorea.png";
 import Placeholder1 from "../../images/placeholder-small.png";
 import Placeholder2 from "../../images/placeholder2-small.png";
 import PregnancyImage from "../../images/pregnancy.jpg";
@@ -18,7 +17,6 @@ export default function PortfolioContentPhotography() {
     <div className="show-content-photos">
       <div className="row">
         <div className="imagebox">
-          {/* <img src={TwoDogsImage} alt="Two dogs" /> */}
           <LazyImage
             src={TwoDogsImage}
             alt="Two dogs"
@@ -30,11 +28,12 @@ export default function PortfolioContentPhotography() {
                 alt={imageProps.alt}
               />
             )}
-            actual={({ imageProps }) => <img {...imageProps} />}
+            actual={({ imageProps }) => (
+              <img alt="placeholder" {...imageProps} />
+            )}
           />
         </div>
         <div className="imagebox">
-          {/* <img src={SicilyImage} alt="Man in Sicily" /> */}
           <LazyImage
             src={SicilyImage}
             alt="Man in Sicily"
@@ -46,13 +45,14 @@ export default function PortfolioContentPhotography() {
                 alt={imageProps.alt}
               />
             )}
-            actual={({ imageProps }) => <img {...imageProps} />}
+            actual={({ imageProps }) => (
+              <img alt="placeholder" {...imageProps} />
+            )}
           />
         </div>
       </div>
       <div className="row">
         <div className="imagebox">
-          {/* <img src={PregnancyImage} alt="Pregnant woman" /> */}
           <LazyImage
             src={PregnancyImage}
             alt="Pregnant woman"
@@ -64,11 +64,12 @@ export default function PortfolioContentPhotography() {
                 alt={imageProps.alt}
               />
             )}
-            actual={({ imageProps }) => <img {...imageProps} />}
+            actual={({ imageProps }) => (
+              <img alt="placeholder" {...imageProps} />
+            )}
           />
         </div>
         <div className="imagebox">
-          {/* <img src={KokkolaImage} alt="Birds in Kokkola" /> */}
           <LazyImage
             src={KokkolaImage}
             alt="Birds in Kokkola"
@@ -80,11 +81,12 @@ export default function PortfolioContentPhotography() {
                 alt={imageProps.alt}
               />
             )}
-            actual={({ imageProps }) => <img {...imageProps} />}
+            actual={({ imageProps }) => (
+              <img alt="placeholder" {...imageProps} />
+            )}
           />
         </div>
         <div className="imagebox">
-          {/* <img src={AgilityImage} alt="Agility dog" /> */}
           <LazyImage
             src={AgilityImage}
             alt="Agility dog"
@@ -96,13 +98,14 @@ export default function PortfolioContentPhotography() {
                 alt={imageProps.alt}
               />
             )}
-            actual={({ imageProps }) => <img {...imageProps} />}
+            actual={({ imageProps }) => (
+              <img alt="placeholder" {...imageProps} />
+            )}
           />
         </div>
       </div>
       <div className="row">
         <div className="imagebox">
-          {/* <img src={ManImage} alt="Man and sheeps" /> */}
           <LazyImage
             src={ManImage}
             alt="Man and sheeps"
@@ -114,11 +117,12 @@ export default function PortfolioContentPhotography() {
                 alt={imageProps.alt}
               />
             )}
-            actual={({ imageProps }) => <img {...imageProps} />}
+            actual={({ imageProps }) => (
+              <img alt="placeholder" {...imageProps} />
+            )}
           />
         </div>
         <div className="imagebox">
-          {/* <img src={CatImage} alt="Cat in Greek" /> */}
           <LazyImage
             src={CatImage}
             alt="Cat in Greek"
@@ -130,7 +134,9 @@ export default function PortfolioContentPhotography() {
                 alt={imageProps.alt}
               />
             )}
-            actual={({ imageProps }) => <img {...imageProps} />}
+            actual={({ imageProps }) => (
+              <img alt="placeholder" {...imageProps} />
+            )}
           />
         </div>
       </div>
