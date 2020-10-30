@@ -3,17 +3,18 @@ import ExpandLessIcon from "@material-ui/icons/ExpandLess";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 import { makeStyles } from "@material-ui/core/styles";
 
-import PortfolioContentPhotography from "../PortfolioContentPhotography/PortfolioContentPhotography";
 import PortfolioContentDesign from "../PortfolioContentDesign/PortfolioContentDesign";
+import PortfolioContentWeb from "../PortfolioContentWeb/PortfolioContentWeb";
+import PortfolioContentPhotography from "../PortfolioContentPhotography/PortfolioContentPhotography";
 import "./PortfolioArea.scss";
 
 const useStyles = makeStyles({
   showContent: {
-    display: "block"
+    display: "block",
   },
   hideContent: {
-    display: "none"
-  }
+    display: "none",
+  },
 });
 
 interface BlockProps {
@@ -25,7 +26,7 @@ interface BlockProps {
 const PortfolioAreaBlock: React.FC<BlockProps> = ({
   title,
   children,
-  open = false
+  open = false,
 }) => {
   const classes = useStyles({});
   const [isOpen, setIsOpen] = React.useState(open);
@@ -58,11 +59,14 @@ const PortfolioArea: React.FC<Props> = () => {
   return (
     <div className="portfolio-area">
       <div className="container">
-        <PortfolioAreaBlock title="Valokuvaus" open={true}>
-          <PortfolioContentPhotography />
+        <PortfolioAreaBlock title="Web-projektit" open={true}>
+          <PortfolioContentWeb />
         </PortfolioAreaBlock>
         <PortfolioAreaBlock title="Design ja grafiikka">
           <PortfolioContentDesign />
+        </PortfolioAreaBlock>
+        <PortfolioAreaBlock title="Valokuvaus">
+          <PortfolioContentPhotography />
         </PortfolioAreaBlock>
       </div>
     </div>

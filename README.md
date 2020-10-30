@@ -2,7 +2,16 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Git clone https://github.com/annaruntti/portfolio2.1.git
 
+Check yout node version. You need latest version. Check:
+
+### `none -v`
+
+If you have old version, update it with nvm:
+
+### `nvm install node`
+
 In the project directory, you can run:
+
 ### `npm start`
 
 Runs the app in the development mode.<br />
@@ -34,4 +43,3 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/ma
 ### Advanced Configuration
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-

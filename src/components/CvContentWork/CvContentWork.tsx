@@ -6,7 +6,7 @@ export default function CvContentWork() {
     <div className="show-content-work">
       <p>
         <b>
-          Siili Solutions Oyj 04/2018 -> nykyhetki, Web developer, konsultti
+          Siili Solutions Oyj 04/2018 -&gt; nykyhetki, Web developer, konsultti
         </b>
         <br />
         Työskentely konsulttina eri asiakasprojekteissa toimien mm. front-end
