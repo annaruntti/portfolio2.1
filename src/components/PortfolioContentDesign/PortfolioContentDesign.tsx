@@ -5,11 +5,17 @@ import { LazyImage } from "react-lazy-images";
 // import Placeholder1 from "../../images/placeholder-small.png";
 import Placeholder2 from "../../images/placeholder2-small.png";
 import PuppyStartImage from "../../images/puppy-start-view.png";
+import PortfolioStart from "../../images/portfolio-mobile-start-view.png";
 import PuppyLogo from "../../images/dog-logo-sircle.png";
+import AnnaTialaLogo from "../../images/at-logo-sircle.png";
 import AddLitterImage from "../../images/puppy-add-litter.png";
 import PuppyFrontPage from "../../images/puppy-frontpage.png";
+import CVMobileView from "../../images/mobile-cv-view.png";
 import LitterDataImage from "../../images/puppy-litter-data.png";
+import PortfolioMobileView from "../../images/mobile-portfolio-view.png";
 import AddPuppysImage from "../../images/puppy-add-litter-puppys.png";
+import ContactMobileView from "../../images/mobile-contact-view.png";
+import CvDesktopView from "../../images/portfolio-cv-desktop.jpg";
 import MarkWeightImage from "../../images/puppy-litter-data-mark-weight.png";
 import LitterPlansImage from "../../images/umajarymy.jpg";
 import LitterPlansImage2 from "../../images/mainos.jpg";
@@ -138,6 +144,113 @@ export default function PortfolioContentDesign() {
             <div className="image-wrapper">
               <LazyImage
                 src={MarkWeightImage}
+                alt="Web site layout"
+                placeholder={({ imageProps, ref }) => (
+                  <img
+                    className="intrinsic-item animated fadeIn"
+                    ref={ref}
+                    src={Placeholder2}
+                    alt={imageProps.alt}
+                  />
+                )}
+                actual={({ imageProps }) => (
+                  <img alt={imageProps.alt} {...imageProps} />
+                )}
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="project-box">
+        <div className="row">
+          <div className="logo-image">
+            <img src={AnnaTialaLogo} alt="Anna Tiala logo" />
+          </div>
+          <div className="text-introduction">
+            <h4>Uuden portfolion design</h4>
+            <p>
+              Aloitin uuden web-portfolioni suunnittelun vuonna 2019. Uuden
+              portfolion ulkoasu koki projektin aikana isoja muutoksia ja muutin
+              alkuperäistä suunnitelmaani useaan otteeseen. Leiskat tein
+              Sketchilla. Piirsin myös käytetyt grafiikat itse Sketchilla.
+            </p>
+          </div>
+        </div>
+        <div className="image-box">
+          <div className="row">
+            <div className="image-wrapper">
+              <LazyImage
+                src={PortfolioStart}
+                alt="Web site layout"
+                placeholder={({ imageProps, ref }) => (
+                  <img
+                    className="intrinsic-item animated fadeIn"
+                    ref={ref}
+                    src={Placeholder2}
+                    alt={imageProps.alt}
+                  />
+                )}
+                actual={({ imageProps }) => (
+                  <img alt={imageProps.alt} {...imageProps} />
+                )}
+              />
+            </div>
+            <div className="image-wrapper">
+              <LazyImage
+                src={CVMobileView}
+                alt="Web site layout"
+                placeholder={({ imageProps, ref }) => (
+                  <img
+                    className="intrinsic-item animated fadeIn"
+                    ref={ref}
+                    src={Placeholder2}
+                    alt={imageProps.alt}
+                  />
+                )}
+                actual={({ imageProps }) => (
+                  <img alt={imageProps.alt} {...imageProps} />
+                )}
+              />
+            </div>
+            <div className="image-wrapper">
+              <LazyImage
+                src={PortfolioMobileView}
+                alt="Web site layout"
+                placeholder={({ imageProps, ref }) => (
+                  <img
+                    className="intrinsic-item animated fadeIn"
+                    ref={ref}
+                    src={Placeholder2}
+                    alt={imageProps.alt}
+                  />
+                )}
+                actual={({ imageProps }) => (
+                  <img alt={imageProps.alt} {...imageProps} />
+                )}
+              />
+            </div>
+          </div>
+          <div className="row">
+            <div className="image-wrapper">
+              <LazyImage
+                src={ContactMobileView}
+                alt="Web site layout"
+                placeholder={({ imageProps, ref }) => (
+                  <img
+                    className="intrinsic-item animated fadeIn"
+                    ref={ref}
+                    src={Placeholder2}
+                    alt={imageProps.alt}
+                  />
+                )}
+                actual={({ imageProps }) => (
+                  <img alt={imageProps.alt} {...imageProps} />
+                )}
+              />
+            </div>
+            <div className="image-wrapper">
+              <LazyImage
+                src={CvDesktopView}
                 alt="Web site layout"
                 placeholder={({ imageProps, ref }) => (
                   <img
