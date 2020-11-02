@@ -5,7 +5,6 @@ import { LazyImage } from "react-lazy-images";
 // import Placeholder1 from "../../images/placeholder-small.png";
 import Placeholder2 from "../../images/placeholder2-small.png";
 import PuppyStartImage from "../../images/puppy-start-view.png";
-import PuppyLogo from "../../images/dog-logo-sircle.png";
 import AddLitterImage from "../../images/puppy-add-litter.png";
 import PuppyFrontPage from "../../images/puppy-frontpage.png";
 import LitterDataImage from "../../images/puppy-litter-data.png";
@@ -15,17 +14,6 @@ import OldPortfolio1 from "../../images/old-portfolio3.png";
 import OldPortfolio2 from "../../images/old-portfolio.png";
 import OldPortfolio3 from "../../images/old-portfolio2.png";
 import OldPortfolio4 from "../../images/old-portfolio4.png";
-import CoverPhoto2 from "../../images/kesajuhlat2017.jpg";
-import CoverPhoto1 from "../../images/pikkujoulut.jpg";
-import CoverPhoto3 from "../../images/hype-it.jpg";
-import CoverPhoto4 from "../../images/kesajuhlat2016.jpg";
-import CardPhoto1 from "../../images/flowers.jpg";
-import CardPhoto2 from "../../images/paint.jpg";
-import CardPhoto3 from "../../images/kutsu.png";
-import CardPhoto4 from "../../images/ristiaiskutsu.jpeg";
-import CardPhoto5 from "../../images/pikipaimenkortti.jpg";
-import CardPhoto6 from "../../images/joulukortti2.jpg";
-import CardPhoto7 from "../../images/pikipaimenkortti.png";
 import "./PortfolioContentWeb.scss";
 
 export default function PortfolioContentWeb() {
