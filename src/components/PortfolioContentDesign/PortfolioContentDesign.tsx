@@ -20,6 +20,8 @@ import MarkWeightImage from "../../images/puppy-litter-data-mark-weight.png";
 import LitterPlansImage from "../../images/umajarymy.jpg";
 import LitterPlansImage2 from "../../images/mainos.jpg";
 import LitterPlansImage3 from "../../images/mainos2.jpg";
+import LinkedinCoverPhoto from "../../images/linkedin-coverphoto.jpg";
+import CvPhoto from "../../images/new-cv.jpg";
 import CoverPhoto2 from "../../images/kesajuhlat2017.jpg";
 import CoverPhoto1 from "../../images/pikkujoulut.jpg";
 import CoverPhoto3 from "../../images/hype-it.jpg";
@@ -251,6 +253,63 @@ export default function PortfolioContentDesign() {
             <div className="image-wrapper">
               <LazyImage
                 src={CvDesktopView}
+                alt="Web site layout"
+                placeholder={({ imageProps, ref }) => (
+                  <img
+                    className="intrinsic-item animated fadeIn"
+                    ref={ref}
+                    src={Placeholder2}
+                    alt={imageProps.alt}
+                  />
+                )}
+                actual={({ imageProps }) => (
+                  <img alt={imageProps.alt} {...imageProps} />
+                )}
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="project-box">
+        <div className="row">
+          <div className="logo-image">
+            <img src={AnnaTialaLogo} alt="Anna Tiala logo" />
+          </div>
+          <div className="text-introduction">
+            <h4>Uuden portfolion kanssa yhtenäinen design</h4>
+            <p>
+              Luotuani grafiikkaa ja uuden graafisen ilmeen uuteen
+              web-portfoliooni, halusin samaa tyyliä myös muualle. Loin
+              Skethillä Linkedin-profiiliini uuden coverphoton, sekä uudistin
+              CV:ni, johon otin mukaan portfoliostani tuttuja värejä, fontteja
+              ja grafiikkoja.
+            </p>
+          </div>
+        </div>
+        <div className="image-box">
+          <div className="row">
+            <div className="image-wrapper">
+              <LazyImage
+                src={CvPhoto}
+                alt="Web site layout"
+                placeholder={({ imageProps, ref }) => (
+                  <img
+                    className="intrinsic-item animated fadeIn"
+                    ref={ref}
+                    src={Placeholder2}
+                    alt={imageProps.alt}
+                  />
+                )}
+                actual={({ imageProps }) => (
+                  <img alt={imageProps.alt} {...imageProps} />
+                )}
+              />
+            </div>
+          </div>
+          <div className="row">
+            <div className="image-wrapper">
+              <LazyImage
+                src={LinkedinCoverPhoto}
                 alt="Web site layout"
                 placeholder={({ imageProps, ref }) => (
                   <img
