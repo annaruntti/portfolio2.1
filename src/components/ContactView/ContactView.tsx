@@ -21,13 +21,11 @@ export default function ContactView() {
                 <div className="contat-info">
                   <h3>Yhteystiedot</h3>
                   <p>
-                    linkedin.com/in/annaruntti/
+                    <a href="linkedin.com/in/annaruntti/">Linkedin</a>
                     <br />
-                    https://github.com/annaruntti
+                    <a href="https://github.com/annaruntti">Github</a>
                     <br />
-                    anruntti@gmail.com
-                    <br />
-                    +358452346943
+                    <a href="mailto:anruntti@gmail.com">Sähköposti</a>
                     <br />
                     Oulu, Suomi
                     <br />
