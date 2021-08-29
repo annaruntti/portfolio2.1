@@ -30,13 +30,13 @@ export default function ContactForm() {
   return (
     <form className="contact-form" onSubmit={sendEmail}>
       <label>Nimi</label>
-      <input id="name" name="name" type="text" />
+      <input id="name" name="name" type="text" required />
       <label>Sähköpostiosoite</label>
-      <input id="email" name="email" type="email" />
+      <input id="email" name="email" type="email" required />
       <label>Viestin aihe</label>
-      <input id="subject" name="subject" type="text" />
+      <input id="subject" name="subject" type="text" required />
       <label>Viestisi</label>
-      <textarea id="message" name="message" />
+      <textarea id="message" name="message" required />
       <div className="btn-area">
         <button className="submit-btn" type="submit" value="Send message">
           Lähetä
