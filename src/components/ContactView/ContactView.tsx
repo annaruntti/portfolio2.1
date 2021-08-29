@@ -2,8 +2,6 @@ import * as React from "react";
 import ContactTitleBlock from "../ContactTitleBlock/ContactTitleBlock";
 import ContactForm from "../ContactForm/ContactForm";
 import ProfileImage from "../../images/profile.jpg";
-// import CvLinkBlock from "../CvLinkBlock/CvLinkBlock";
-// import PortfolioLinkBlock from "../PortfolioLinkBlock/PortfolioLinkBlock";
 import "./ContactView.scss";
 
 export default function ContactView() {
@@ -38,14 +36,8 @@ export default function ContactView() {
                 <div className="alert alert-info" role="alert">
                   <h3>Ota yhteyttä!</h3>
                   <p>Voit ottaa minuun yhteyttä oheisella formilla.</p>
-                  <p>
-                    Huom. päivitys 17.3.2020, yhteydenottolomake ei toimi juuri
-                    nyt, otathan yhteyttä sähköpostitse.
-                  </p>
                 </div>
                 <ContactForm />
-                {/* <CvLinkBlock /> */}
-                {/* <PortfolioLinkBlock /> */}
               </div>
             </div>
           </div>

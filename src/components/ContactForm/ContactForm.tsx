@@ -4,7 +4,6 @@ import "./ContactForm.scss";
 
 export default function ContactForm() {
   function sendEmail(e: React.FormEvent<HTMLFormElement>) {
-    console.log("löhetys");
     e.preventDefault();
 
     emailjs
@@ -16,9 +15,13 @@ export default function ContactForm() {
       )
       .then(
         result => {
+          alert("Kiitos, viestisi on lähetetty!");
           console.log(result.text);
         },
         error => {
+          alert(
+            "Lähetys epäonnistui, olethan sähköpostitse yhteydessä, kiitos!"
+          );
           console.log(error.text);
         }
       );
