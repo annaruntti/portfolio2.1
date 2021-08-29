@@ -49,6 +49,11 @@
   color: #fff;
   border: 0;
   box-shadow: 0px 2px 2px rgba(74, 74, 74, 0.8);
+  cursor: pointer;
+}
+
+.show-content-btn:hover {
+  background-color: #90ead9;
 }
 
 .show-content-btn svg {

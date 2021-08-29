@@ -35,7 +35,7 @@ export default function ContactView() {
               <div className="contact-form-area">
                 <div className="alert alert-info" role="alert">
                   <h3>Ota yhteyttä!</h3>
-                  <p>Voit ottaa minuun yhteyttä oheisella formilla.</p>
+                  <p>Voit ottaa minuun yhteyttä oheisella lomakeella.</p>
                 </div>
                 <ContactForm />
               </div>
