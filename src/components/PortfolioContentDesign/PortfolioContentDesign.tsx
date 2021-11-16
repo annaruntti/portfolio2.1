@@ -287,6 +287,9 @@ export default function PortfolioContentDesign() {
           </div>
         </div>
         <div className="image-box">
+          <div>
+            <h5>Portfolion tyylien kanssa yhtenäinen ansioluettelo</h5>
+          </div>
           <div className="row">
             <div className="image-wrapper">
               <LazyImage
@@ -305,6 +308,12 @@ export default function PortfolioContentDesign() {
                 )}
               />
             </div>
+          </div>
+          <div>
+            <h5>
+              Portfolion tyylien kanssa yhtenäinen "cover photo"
+              Linkedin-profiiliini
+            </h5>
           </div>
           <div className="row">
             <div className="image-wrapper">
