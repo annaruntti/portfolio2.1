@@ -37,6 +37,8 @@ export default function Skills() {
           <p>
             React
             <br />
+            Vue
+            <br />
             Redux
             <br />
             Reflux

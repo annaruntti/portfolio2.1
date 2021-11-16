@@ -10,7 +10,7 @@ const IntroductionBlock: React.FC<BlockProps> = () => {
     <div className="introduction-block">
       <h1>"Minä oon Anna ja mää tykkään koodata."</h1>
       <p className="ingress">
-        Olen 30-vuotias, oppimaan innokas koodari Anna ja hurahtanut pahasti
+        Olen 31-vuotias, oppimaan innokas koodari Anna ja hurahtanut pahasti
         myös käytettävyys- ja käyttökokemus-
         <br />
         suunnitteluun, saavutettavuuteen ja graafiseen suunnitteluun.
