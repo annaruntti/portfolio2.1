@@ -10,7 +10,11 @@ If you have old version, update it with nvm:
 
 ### `nvm install node`
 
-In the project directory, you can run:
+In the project directory, run:
+
+### `npm install`
+
+After that in the project directory, you can run:
 
 ### `npm start`
 
