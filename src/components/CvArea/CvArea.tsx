@@ -68,7 +68,7 @@ const CvArea: React.FC<Props> = () => {
               <img className="header-image" src={ProfileImage} alt="Me" />
             </div>
             <h1 className="profile-title">Anna Tiala</h1>
-            <h3>CV 11.11.2019</h3>
+            <h3>CV 20.04.2022</h3>
             <hr />
             <p>
               linkedin.com/in/annaruntti/

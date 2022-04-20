@@ -6,7 +6,15 @@ export default function CvContentWork() {
     <div className="show-content-work">
       <p>
         <b>
-          Siili Solutions Oyj 04/2018 -&gt; nykyhetki, Web developer, konsultti
+          VAIMO Finland Oy 04/2018 -&gt; nykyhetki, Front-end developer, Competence Lead
+        </b>
+        <br />
+        Front-end -kehittäjä ja front-end -tiimin esihenkilö. Toteutamme asiakkaillemme verkkokauppoja. Olen itse mukana projekteissa, joissa käytämme back-endissä Magentoa ja front-end rakennetaan käyttäen headless-teknologioita.
+        Käytetyt teknologiat mm. PWA Studio, JavaScript, React.js, NodeJS, GraphQL.
+      </p>
+      <p>
+        <b>
+          Siili Solutions Oyj 04/2018-01/2022, Web developer, konsultti
         </b>
         <br />
         Työskentely konsulttina eri asiakasprojekteissa toimien mm. front-end
