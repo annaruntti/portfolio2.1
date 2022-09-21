@@ -12,7 +12,7 @@ function App() {
     <Router>
       <div className="App">
         <Header />
-        <div id="main-content" className="main-app">
+        <main id="main-content" className="main-app">
           <Route exact path="/">
             <Main />
           </Route>
@@ -25,7 +25,7 @@ function App() {
           <Route exact path="/yhteys">
             <ContactView />
           </Route>
-        </div>
+        </main>
       </div>
     </Router>
   );
