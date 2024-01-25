@@ -11,17 +11,14 @@ export default function CvContentWork() {
         </b>
         <br />
         Front-end -kehittäjä ja front-end -tiimin esihenkilö. Toteutamme
-        asiakkaillemme verkkokauppoja. Olen itse mukana projekteissa, joissa
-        käytämme useimmiten back-endissä Magentoa ja front-end rakennetaan
-        käyttäen headless-teknologioita. Käytetyt teknologiat mm. React.js, PWA
-        Studio, Vue.js, Vue Storefront, JavaScript, TypeScript, NodeJS, GraphQL
-        ja Contentful.
+        asiakkaillemme pääasiallisesti verkkokauppoja, mutta myös muita ICT-projekteja ja palveluja. Olen itse ollut mukana mm. verkkokauppojen kehitysprojekteissa front-end-kehittäjänä ja saavutettavuusasiantuntijana, sekä kehittämässä natiivi mobiilisovellusta. Projekteissani käyttämiäni teknologioita ovat olleet mm. React.js, PWA
+        Studio, Vue.js, Vue Storefront, JavaScript, TypeScript, NodeJS, GraphQL, Contentful sekä React Native.
       </p>
       <p>
         <b>Siili Solutions Oyj 04/2018-01/2022, Web developer, konsultti</b>
         <br />
         Työskentely konsulttina eri asiakasprojekteissa toimien mm. front-end
-        -kehittäjänä, full-stack web-kehittäjänä sekä lisäksi käytettävyys- ja
+        -kehittäjänä, full-stack-kehittäjänä sekä lisäksi käytettävyys- ja
         käyttökokemussunnittelun tehtävissä. Käytetyt teknologiat mm.
         JavaScript, TypeScript, React.js, Vue.js, Ramda.js, NodeJS, Express.js,
         PostgreSQL, Java, AWS, React Native. Asiakkuuksieni toimialoina ovat

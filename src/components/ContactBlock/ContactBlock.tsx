@@ -9,7 +9,7 @@ export default function ContactBlock() {
       <div className="container">
         <div className="flex-row">
           <div className="flex-left">
-            <h2 className="cv-title">Ota yhteyttä!</h2>
+            <h3 className="h2 cv-title">Ota yhteyttä!</h3>
             <p className="large-text">
               Kiinnostuitko?
               <br />

@@ -67,7 +67,7 @@ const CvArea: React.FC<Props> = () => {
             <div className="image-cropper">
               <img className="header-image" src={ProfileImage} alt="Me" />
             </div>
-            <h1 className="profile-title">Anna Tiala</h1>
+            <h2 className="h1 profile-title">Anna Tiala</h2>
             <h3>CV 20.04.2022</h3>
             <hr />
             <p>

@@ -9,7 +9,7 @@ export default function PortfolioBlock() {
       <div className="container">
         <div className="flex-row">
           <div className="flex-left">
-            <h2 className="cv-title">Portfolioni</h2>
+            <h3 className="h2 cv-title">Portfolioni</h3>
             <p className="large-text">
               Käy selaamassa töitäni portfoliostani. Portfolioon on listattu mm.
               tekemiäni nettisivuprojekteja, web-designia, graafista designia,

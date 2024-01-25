@@ -11,7 +11,7 @@ export default function CvBlock() {
         <IntroductionBlock />
         <div className="flex-row">
           <div className="flex-left">
-            <h2 className="cv-title">Ansioluetteloni</h2>
+            <h3 className="h2 cv-title">Ansioluetteloni</h3>
             <p className="large-text">
               Käy lukemassa ansioluetteloni!
               <br />
