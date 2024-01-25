@@ -19,13 +19,13 @@ export default function ContactView() {
                 <div className="contat-info">
                   <h3>Yhteystiedot</h3>
                   <p>
-                    <a href="linkedin.com/in/annaruntti/">Linkedin</a>
+                    <a className="link" href="https://www.linkedin.com/in/annaruntti/">Linkedin</a>
                     <br />
-                    <a href="https://github.com/annaruntti">Github</a>
+                    <a className="link" href="https://github.com/annaruntti">Github</a>
                     <br />
-                    <a href="mailto:anruntti@gmail.com">Sähköposti</a>
+                    <a className="link" href="mailto:anruntti@gmail.com">Sähköposti</a>
                     <br />
-                    Oulu, Suomi
+                    <b>Oulu, Suomi</b>
                     <br />
                   </p>
                 </div>
