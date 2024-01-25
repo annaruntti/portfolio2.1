@@ -18,7 +18,7 @@ export default function Header() {
                   alt="Me and my dogs"
                 />
               </div>
-              <h1 className="header-title-name">Anna Tiala</h1>
+              <span className="h1 header-title-name">Anna Tiala</span>
             </div>
             <h1 className="header-title">Portfolio</h1>
           </div>
