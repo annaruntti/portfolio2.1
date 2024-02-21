@@ -35,9 +35,11 @@ export default function Skills() {
         <div className="skill-block">
           <h4>Frameworkit ja kirjastot</h4>
           <p>
-            React
+            React.js
             <br />
-            Vue
+            Vue.js
+            <br />
+            Next.js
             <br />
             Redux
             <br />
@@ -66,6 +68,8 @@ export default function Skills() {
             PostgreSQL
             <br />
             MySQL
+            <br />
+            MongoDB
           </p>
           <h4>Pilvipalvelut</h4>
           <p>
@@ -74,21 +78,33 @@ export default function Skills() {
             Google Cloud
           </p>
           <h4>DevOps</h4>
-          <p>Docker</p>
+          <p>
+            Docker
+            <br />
+            Jenkis
+            <br />
+            CI/CD
+          </p>
         </div>
       </div>
       <div className="row">
         <div className="skill-block">
-          <h4>Buildaustyökalut</h4>
+          <h4>Alustat ja sisällönhallinta</h4>
           <p>
-            Gulp
+            Contentful
             <br />
-            Webpack
+            Adobe Commerce (entinen Magento)
+            <br />
+            Wordpress
+            <br />
+            LianaCMS, entinen Sivuviidakko
           </p>
         </div>
         <div className="skill-block">
           <h4>Design työkalut</h4>
           <p>
+            Figma
+            <br />
             Sketch
             <br />
             InVision

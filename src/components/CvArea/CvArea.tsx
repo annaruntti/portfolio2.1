@@ -13,11 +13,11 @@ import "./CvArea.scss";
 
 const useStyles = makeStyles({
   showContent: {
-    display: "block"
+    display: "block",
   },
   hideContent: {
-    display: "none"
-  }
+    display: "none",
+  },
 });
 
 interface BlockProps {
@@ -29,7 +29,7 @@ interface BlockProps {
 const CvAreaBlock: React.FC<BlockProps> = ({
   title,
   children,
-  open = false
+  open = false,
 }) => {
   const classes = useStyles({});
   const [isOpen, setIsOpen] = React.useState(open);
@@ -68,24 +68,32 @@ const CvArea: React.FC<Props> = () => {
               <img className="header-image" src={ProfileImage} alt="Me" />
             </div>
             <h2 className="h1 profile-title">Anna Tiala</h2>
-            <h3>CV 20.04.2022</h3>
+            <h3>CV 21.02.2024</h3>
             <hr />
-            <p>
-              linkedin.com/in/annaruntti/
-              <br />
-              github.com/annaruntti
-              <br />
-              suomenlapinkoira.net/
-              <br />
-              anruntti@gmail.com
-              <br />
-              +358452346943
-              <br />
-              Oulu, Suomi
-              <br />
-              s. 1990
-              <br />
-            </p>
+            <ul className="contact-list">
+              <li>
+                <a
+                  className="link"
+                  href="https://www.linkedin.com/in/annaruntti/"
+                >
+                  Linkedin
+                </a>
+              </li>
+
+              <li>
+                <a className="link" href="https://github.com/annaruntti">
+                  Github
+                </a>
+              </li>
+              <li>
+                <a className="link" href="mailto:anruntti@gmail.com">
+                  Sähköposti
+                </a>
+              </li>
+              <li>
+                <b>Oulu, Suomi</b>
+              </li>
+            </ul>
             <Skills />
           </div>
           <div className="flex-item-right">

@@ -146,9 +146,17 @@ h4 {
 }
 
 .link {
-  text-decoration: none;
   color: #e7498a;
   font-weight: 600;
+}
+
+.contact-list {
+  padding-left: 0;
+  list-style: none;
+}
+
+.contact-list li {
+  margin-bottom: 0.25rem;
 }
 
 /* .main-app {
