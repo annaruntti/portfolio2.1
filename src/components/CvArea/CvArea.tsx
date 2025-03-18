@@ -1,7 +1,7 @@
 import React from "react";
-import ExpandLessIcon from "@material-ui/icons/ExpandLess";
-import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
-import { makeStyles } from "@material-ui/core/styles";
+import ExpandLessIcon from "@mui/icons-material/ExpandLess";
+import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
+import { styled } from "@mui/material/styles";
 
 import ProfileImage from "../../images/profile.jpg";
 import Skills from "../Skills/Skills";
@@ -11,19 +11,18 @@ import CvContentResponsibilities from "../CvContentResponsibilities/CvContentRes
 import CvContentHobbies from "../CvContentHobbies/CvContentHobbies";
 import "./CvArea.scss";
 
-const useStyles = makeStyles({
-  showContent: {
-    display: "block",
-  },
-  hideContent: {
-    display: "none",
-  },
+const ContentDiv = styled("div")({
+  display: "block",
+});
+
+const HiddenDiv = styled("div")({
+  display: "none",
 });
 
 interface BlockProps {
   title: string;
   children: React.ReactNode;
-  open?: Boolean;
+  open?: boolean;
 }
 
 const CvAreaBlock: React.FC<BlockProps> = ({
@@ -31,7 +30,6 @@ const CvAreaBlock: React.FC<BlockProps> = ({
   children,
   open = false,
 }) => {
-  const classes = useStyles({});
   const [isOpen, setIsOpen] = React.useState(open);
 
   return (
@@ -47,9 +45,11 @@ const CvAreaBlock: React.FC<BlockProps> = ({
           </button>
         </div>
       </div>
-      <div className={isOpen ? classes.showContent : classes.hideContent}>
-        {children}
-      </div>
+      {isOpen ? (
+        <ContentDiv>{children}</ContentDiv>
+      ) : (
+        <HiddenDiv>{children}</HiddenDiv>
+      )}
     </div>
   );
 };

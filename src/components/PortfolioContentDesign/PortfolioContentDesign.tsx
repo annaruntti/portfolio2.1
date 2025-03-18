@@ -1,5 +1,6 @@
-import * as React from "react";
-import { LazyImage } from "react-lazy-images";
+import React from "react";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
 
 // import ATLogo from "../../images/logo-pyorea.png";
 // import Placeholder1 from "../../images/placeholder-small.png";
@@ -35,7 +36,7 @@ import CardPhoto6 from "../../images/joulukortti2.jpg";
 import CardPhoto7 from "../../images/pikipaimenkortti.png";
 import "./PortfolioContentDesign.scss";
 
-export default function PortfolioContentDesign() {
+const PortfolioContentDesign: React.FC = () => {
   return (
     <div className="show-content-design">
       <div className="project-box">
@@ -57,107 +58,59 @@ export default function PortfolioContentDesign() {
         <div className="image-box">
           <div className="row">
             <div className="image-wrapper">
-              <LazyImage
+              <LazyLoadImage
                 src={PuppyStartImage}
                 alt="Web site layout"
-                placeholder={({ imageProps, ref }) => (
-                  <img
-                    className="intrinsic-item animated fadeIn"
-                    ref={ref}
-                    src={Placeholder2}
-                    alt={imageProps.alt}
-                  />
-                )}
-                actual={({ imageProps }) => (
-                  <img alt={imageProps.alt} {...imageProps} />
-                )}
+                effect="blur"
+                width="100%"
+                height="auto"
               />
             </div>
             <div className="image-wrapper">
-              <LazyImage
+              <LazyLoadImage
                 src={PuppyFrontPage}
                 alt="Web site layout"
-                placeholder={({ imageProps, ref }) => (
-                  <img
-                    className="intrinsic-item animated fadeIn"
-                    ref={ref}
-                    src={Placeholder2}
-                    alt={imageProps.alt}
-                  />
-                )}
-                actual={({ imageProps }) => (
-                  <img alt={imageProps.alt} {...imageProps} />
-                )}
+                effect="blur"
+                width="100%"
+                height="auto"
               />
             </div>
             <div className="image-wrapper">
-              <LazyImage
+              <LazyLoadImage
                 src={AddLitterImage}
                 alt="Web site layout"
-                placeholder={({ imageProps, ref }) => (
-                  <img
-                    className="intrinsic-item animated fadeIn"
-                    ref={ref}
-                    src={Placeholder2}
-                    alt={imageProps.alt}
-                  />
-                )}
-                actual={({ imageProps }) => (
-                  <img alt={imageProps.alt} {...imageProps} />
-                )}
+                effect="blur"
+                width="100%"
+                height="auto"
               />
             </div>
           </div>
           <div className="row">
             <div className="image-wrapper">
-              <LazyImage
+              <LazyLoadImage
                 src={AddPuppysImage}
                 alt="Web site layout"
-                placeholder={({ imageProps, ref }) => (
-                  <img
-                    className="intrinsic-item animated fadeIn"
-                    ref={ref}
-                    src={Placeholder2}
-                    alt={imageProps.alt}
-                  />
-                )}
-                actual={({ imageProps }) => (
-                  <img alt={imageProps.alt} {...imageProps} />
-                )}
+                effect="blur"
+                width="100%"
+                height="auto"
               />
             </div>
             <div className="image-wrapper">
-              <LazyImage
+              <LazyLoadImage
                 src={LitterDataImage}
                 alt="Web site layout"
-                placeholder={({ imageProps, ref }) => (
-                  <img
-                    className="intrinsic-item animated fadeIn"
-                    ref={ref}
-                    src={Placeholder2}
-                    alt={imageProps.alt}
-                  />
-                )}
-                actual={({ imageProps }) => (
-                  <img alt={imageProps.alt} {...imageProps} />
-                )}
+                effect="blur"
+                width="100%"
+                height="auto"
               />
             </div>
             <div className="image-wrapper">
-              <LazyImage
+              <LazyLoadImage
                 src={MarkWeightImage}
                 alt="Web site layout"
-                placeholder={({ imageProps, ref }) => (
-                  <img
-                    className="intrinsic-item animated fadeIn"
-                    ref={ref}
-                    src={Placeholder2}
-                    alt={imageProps.alt}
-                  />
-                )}
-                actual={({ imageProps }) => (
-                  <img alt={imageProps.alt} {...imageProps} />
-                )}
+                effect="blur"
+                width="100%"
+                height="auto"
               />
             </div>
           </div>
@@ -181,90 +134,50 @@ export default function PortfolioContentDesign() {
         <div className="image-box">
           <div className="row">
             <div className="image-wrapper">
-              <LazyImage
+              <LazyLoadImage
                 src={PortfolioStart}
                 alt="Web site layout"
-                placeholder={({ imageProps, ref }) => (
-                  <img
-                    className="intrinsic-item animated fadeIn"
-                    ref={ref}
-                    src={Placeholder2}
-                    alt={imageProps.alt}
-                  />
-                )}
-                actual={({ imageProps }) => (
-                  <img alt={imageProps.alt} {...imageProps} />
-                )}
+                effect="blur"
+                width="100%"
+                height="auto"
               />
             </div>
             <div className="image-wrapper">
-              <LazyImage
+              <LazyLoadImage
                 src={CVMobileView}
                 alt="Web site layout"
-                placeholder={({ imageProps, ref }) => (
-                  <img
-                    className="intrinsic-item animated fadeIn"
-                    ref={ref}
-                    src={Placeholder2}
-                    alt={imageProps.alt}
-                  />
-                )}
-                actual={({ imageProps }) => (
-                  <img alt={imageProps.alt} {...imageProps} />
-                )}
+                effect="blur"
+                width="100%"
+                height="auto"
               />
             </div>
             <div className="image-wrapper">
-              <LazyImage
+              <LazyLoadImage
                 src={PortfolioMobileView}
                 alt="Web site layout"
-                placeholder={({ imageProps, ref }) => (
-                  <img
-                    className="intrinsic-item animated fadeIn"
-                    ref={ref}
-                    src={Placeholder2}
-                    alt={imageProps.alt}
-                  />
-                )}
-                actual={({ imageProps }) => (
-                  <img alt={imageProps.alt} {...imageProps} />
-                )}
+                effect="blur"
+                width="100%"
+                height="auto"
               />
             </div>
           </div>
           <div className="row">
             <div className="image-wrapper">
-              <LazyImage
+              <LazyLoadImage
                 src={ContactMobileView}
                 alt="Web site layout"
-                placeholder={({ imageProps, ref }) => (
-                  <img
-                    className="intrinsic-item animated fadeIn"
-                    ref={ref}
-                    src={Placeholder2}
-                    alt={imageProps.alt}
-                  />
-                )}
-                actual={({ imageProps }) => (
-                  <img alt={imageProps.alt} {...imageProps} />
-                )}
+                effect="blur"
+                width="100%"
+                height="auto"
               />
             </div>
             <div className="image-wrapper">
-              <LazyImage
+              <LazyLoadImage
                 src={CvDesktopView}
                 alt="Web site layout"
-                placeholder={({ imageProps, ref }) => (
-                  <img
-                    className="intrinsic-item animated fadeIn"
-                    ref={ref}
-                    src={Placeholder2}
-                    alt={imageProps.alt}
-                  />
-                )}
-                actual={({ imageProps }) => (
-                  <img alt={imageProps.alt} {...imageProps} />
-                )}
+                effect="blur"
+                width="100%"
+                height="auto"
               />
             </div>
           </div>
@@ -292,20 +205,12 @@ export default function PortfolioContentDesign() {
           </div>
           <div className="row">
             <div className="image-wrapper">
-              <LazyImage
+              <LazyLoadImage
                 src={CvPhoto}
                 alt="Web site layout"
-                placeholder={({ imageProps, ref }) => (
-                  <img
-                    className="intrinsic-item animated fadeIn"
-                    ref={ref}
-                    src={Placeholder2}
-                    alt={imageProps.alt}
-                  />
-                )}
-                actual={({ imageProps }) => (
-                  <img alt={imageProps.alt} {...imageProps} />
-                )}
+                effect="blur"
+                width="100%"
+                height="auto"
               />
             </div>
           </div>
@@ -317,20 +222,12 @@ export default function PortfolioContentDesign() {
           </div>
           <div className="row">
             <div className="image-wrapper">
-              <LazyImage
+              <LazyLoadImage
                 src={LinkedinCoverPhoto}
                 alt="Web site layout"
-                placeholder={({ imageProps, ref }) => (
-                  <img
-                    className="intrinsic-item animated fadeIn"
-                    ref={ref}
-                    src={Placeholder2}
-                    alt={imageProps.alt}
-                  />
-                )}
-                actual={({ imageProps }) => (
-                  <img alt={imageProps.alt} {...imageProps} />
-                )}
+                effect="blur"
+                width="100%"
+                height="auto"
               />
             </div>
           </div>
@@ -469,4 +366,6 @@ export default function PortfolioContentDesign() {
       </div>
     </div>
   );
-}
+};
+
+export default PortfolioContentDesign;

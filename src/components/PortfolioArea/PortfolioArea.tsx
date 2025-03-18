@@ -1,26 +1,25 @@
 import React from "react";
-import ExpandLessIcon from "@material-ui/icons/ExpandLess";
-import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
-import { makeStyles } from "@material-ui/core/styles";
+import ExpandLessIcon from "@mui/icons-material/ExpandLess";
+import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
+import { styled } from "@mui/material/styles";
 
 import PortfolioContentDesign from "../PortfolioContentDesign/PortfolioContentDesign";
 import PortfolioContentWeb from "../PortfolioContentWeb/PortfolioContentWeb";
 import PortfolioContentPhotography from "../PortfolioContentPhotography/PortfolioContentPhotography";
 import "./PortfolioArea.scss";
 
-const useStyles = makeStyles({
-  showContent: {
-    display: "block",
-  },
-  hideContent: {
-    display: "none",
-  },
+const ContentDiv = styled("div")({
+  display: "block",
+});
+
+const HiddenDiv = styled("div")({
+  display: "none",
 });
 
 interface BlockProps {
   title: string;
   children: React.ReactNode;
-  open?: Boolean;
+  open?: boolean;
 }
 
 const PortfolioAreaBlock: React.FC<BlockProps> = ({
@@ -28,7 +27,6 @@ const PortfolioAreaBlock: React.FC<BlockProps> = ({
   children,
   open = false,
 }) => {
-  const classes = useStyles({});
   const [isOpen, setIsOpen] = React.useState(open);
 
   return (
@@ -44,9 +42,11 @@ const PortfolioAreaBlock: React.FC<BlockProps> = ({
           </button>
         </div>
       </div>
-      <div className={isOpen ? classes.showContent : classes.hideContent}>
-        {children}
-      </div>
+      {isOpen ? (
+        <ContentDiv>{children}</ContentDiv>
+      ) : (
+        <HiddenDiv>{children}</HiddenDiv>
+      )}
     </div>
   );
 };
