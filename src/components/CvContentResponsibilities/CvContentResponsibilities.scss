@@ -1,0 +1,37 @@
+@import "../../styles/accessibility";
+
+.show-content-responsibilities {
+  .responsibility-item {
+    margin-bottom: 2rem;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    h4 {
+      margin: 0 0 1rem;
+      font-weight: 600;
+    }
+
+    ul {
+      margin: 0 0 1rem;
+      padding-left: 1.5rem;
+      list-style-type: disc;
+
+      li {
+        margin-bottom: 0.5rem;
+        line-height: 1.5;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+
+    p {
+      margin: 0;
+      line-height: 1.5;
+    }
+  }
+  padding-bottom: 1rem;
+}

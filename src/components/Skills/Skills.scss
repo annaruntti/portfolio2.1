@@ -1,19 +1,87 @@
-.skills .row {
-  display: flex;
-}
+.skills {
+  section {
+    margin-bottom: 2rem;
 
-.skill-block {
-  margin-right: 1rem;
-  width: 50%;
-}
-
-@media (min-width: 768px) {
-  .skills .row {
-    display: grid;
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 
-  .skill-block {
-    margin-right: 1rem;
-    width: 100%;
+  h3 {
+    margin: 0 0 1.5rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+
+  .skills-row {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 2rem;
+    align-items: flex-start;
+  }
+
+  .skills-column {
+    flex: 1;
+    min-width: 0; // Prevents flex items from overflowing
+  }
+
+  .skill-category {
+    margin-bottom: 2rem;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    h4 {
+      margin: 0 0 1rem;
+      font-size: 17px;
+      font-weight: 600;
+      color: #333;
+      min-height: 2.4rem; // Ensures consistent height for titles
+    }
+
+    ul {
+      margin: 0;
+      padding-left: 1.5rem;
+      list-style-type: disc;
+      font-size: 16px;
+
+      li {
+        margin-bottom: 0.5rem;
+        line-height: 1.5;
+        color: #666;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+
+    // For categories with multiple sections (like the one with Mobile, Databases, etc.)
+    > h4 + ul + h4 {
+      margin-top: 1.5rem;
+    }
+  }
+}
+
+// Responsive layout for smaller screens
+@media (max-width: 768px) {
+  .skills {
+    .skills-row {
+      gap: 1rem; // Reduce gap between columns on mobile
+    }
+
+    .skill-category {
+      margin-bottom: 1rem; // Reduce margin between categories
+
+      h4 {
+        min-height: auto; // Remove fixed height on mobile
+        font-size: 16px; // Slightly smaller font for mobile
+      }
+
+      ul {
+        font-size: 15px; // Slightly smaller font for mobile
+      }
+    }
   }
 }

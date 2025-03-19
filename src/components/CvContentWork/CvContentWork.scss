@@ -1,0 +1,32 @@
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.show-content-work {
+  .work-experience {
+    margin-bottom: 2rem;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    h4 {
+      margin: 0 0 1rem;
+      font-weight: 600;
+    }
+
+    p {
+      margin: 0;
+      line-height: 1.5;
+    }
+  }
+  padding-bottom: 1rem;
+}

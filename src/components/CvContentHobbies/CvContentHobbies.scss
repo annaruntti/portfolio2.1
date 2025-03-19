@@ -1,0 +1,11 @@
+@import "../../styles/accessibility";
+
+.show-content-hobbies {
+  .hobbies-content {
+    p {
+      margin: 0;
+      line-height: 1.5;
+    }
+  }
+  padding-bottom: 1rem;
+}
