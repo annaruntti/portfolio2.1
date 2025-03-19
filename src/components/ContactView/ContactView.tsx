@@ -16,7 +16,7 @@ export default function ContactView() {
                 <div className="image-cropper">
                   <img className="header-image" src={ProfileImage} alt="Me" />
                 </div>
-                <div className="contat-info">
+                <div className="contact-info">
                   <h3>Yhteystiedot</h3>
                   <ul className="contact-list">
                     <li>

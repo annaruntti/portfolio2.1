@@ -1,53 +1,26 @@
 import React from "react";
-import ExpandLessIcon from "@mui/icons-material/ExpandLess";
-import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
-import { styled } from "@mui/material/styles";
+import { ExpandableContent } from "../ExpandableContent/ExpandableContent";
+import "./PortfolioArea.scss";
 
 import PortfolioContentDesign from "../PortfolioContentDesign/PortfolioContentDesign";
 import PortfolioContentWeb from "../PortfolioContentWeb/PortfolioContentWeb";
 import PortfolioContentPhotography from "../PortfolioContentPhotography/PortfolioContentPhotography";
-import "./PortfolioArea.scss";
-
-const ContentDiv = styled("div")({
-  display: "block",
-});
-
-const HiddenDiv = styled("div")({
-  display: "none",
-});
 
 interface BlockProps {
   title: string;
   children: React.ReactNode;
-  open?: boolean;
+  defaultExpanded?: boolean;
 }
 
 const PortfolioAreaBlock: React.FC<BlockProps> = ({
   title,
   children,
-  open = false,
+  defaultExpanded = false,
 }) => {
-  const [isOpen, setIsOpen] = React.useState(open);
-
   return (
-    <div className="content-block">
-      <div className="flex-title-row">
-        <h3>{title}</h3>
-        <div className="icon-item">
-          <button
-            className="show-content-btn"
-            onClick={() => setIsOpen(!isOpen)}
-          >
-            {isOpen ? <ExpandLessIcon /> : <ExpandMoreIcon />}
-          </button>
-        </div>
-      </div>
-      {isOpen ? (
-        <ContentDiv>{children}</ContentDiv>
-      ) : (
-        <HiddenDiv>{children}</HiddenDiv>
-      )}
-    </div>
+    <ExpandableContent title={title} defaultExpanded={defaultExpanded}>
+      {children}
+    </ExpandableContent>
   );
 };
 
@@ -59,7 +32,7 @@ const PortfolioArea: React.FC<Props> = () => {
   return (
     <div className="portfolio-area">
       <div className="container">
-        <PortfolioAreaBlock title="Web-projektit" open={true}>
+        <PortfolioAreaBlock title="Web-projektit" defaultExpanded={true}>
           <PortfolioContentWeb />
         </PortfolioAreaBlock>
         <PortfolioAreaBlock title="Design ja grafiikka">
