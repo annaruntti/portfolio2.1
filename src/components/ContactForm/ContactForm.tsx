@@ -26,15 +26,6 @@ export default function ContactForm() {
       submitButton.setAttribute("aria-busy", "true");
     }
 
-    // Get form data
-    const formData = new FormData(e.currentTarget);
-    const templateParams = {
-      name: formData.get("name"),
-      email: formData.get("email"),
-      subject: formData.get("subject"),
-      message: formData.get("message"),
-    };
-
     emailjs
       .sendForm(
         EMAILJS_CONFIG.serviceId,
