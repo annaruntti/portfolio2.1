@@ -116,6 +116,7 @@
           align-items: center;
           justify-content: center;
           transition: transform 0.2s ease;
+          color: #666;
 
           &:hover {
             color: #666;
@@ -124,6 +125,7 @@
           svg {
             width: 24px;
             height: 24px;
+            color: #666;
           }
         }
       }
