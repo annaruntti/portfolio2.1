@@ -1,4 +1,3 @@
-import * as React from "react";
 import "./CvContentHobbies.scss";
 
 export default function CvContentHobbies() {

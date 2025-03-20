@@ -1,4 +1,3 @@
-import * as React from "react";
 import "./CvContentResponsibilities.scss";
 
 export default function CvContentResponsibilities() {

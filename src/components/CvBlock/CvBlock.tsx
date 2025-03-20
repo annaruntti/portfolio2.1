@@ -1,4 +1,3 @@
-import * as React from "react";
 import CvImage from "../../images/work.png";
 import { Link } from "react-router-dom";
 import IntroductionBlock from "../IntroductionBlock/IntroductionBlock";

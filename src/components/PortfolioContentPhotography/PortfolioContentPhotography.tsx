@@ -1,9 +1,5 @@
-import * as React from "react";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import "react-lazy-load-image-component/src/effects/blur.css";
-
-import Placeholder1 from "../../images/placeholder-small.png";
-import Placeholder2 from "../../images/placeholder2-small.png";
 import PregnancyImage from "../../images/pregnancy.jpg";
 import AgilityImage from "../../images/agility.jpg";
 import ManImage from "../../images/dad.jpg";

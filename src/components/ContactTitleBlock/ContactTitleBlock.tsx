@@ -1,4 +1,3 @@
-import * as React from "react";
 import "./ContactTitleBlock.scss";
 
 export default function ContactTitleBlock() {

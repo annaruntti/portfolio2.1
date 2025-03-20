@@ -1,4 +1,3 @@
-import * as React from "react";
 import "./PortfolioTitleBlock.scss";
 
 export default function PortfolioTitleBlock() {

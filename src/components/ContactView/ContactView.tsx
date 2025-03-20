@@ -1,4 +1,3 @@
-import * as React from "react";
 import ContactTitleBlock from "../ContactTitleBlock/ContactTitleBlock";
 import ContactForm from "../ContactForm/ContactForm";
 import ProfileImage from "../../images/profile.jpg";

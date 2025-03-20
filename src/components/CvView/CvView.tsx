@@ -1,4 +1,3 @@
-import * as React from "react";
 import TitleBlock from "../TitleBlock/TitleBlock";
 import CvArea from "../CvArea/CvArea";
 import "./CvView.scss";

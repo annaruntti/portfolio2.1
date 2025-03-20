@@ -1,4 +1,3 @@
-import * as React from "react";
 import ContactImage from "../../images/contact.png";
 import { Link } from "react-router-dom";
 import "./ContactBlock.scss";

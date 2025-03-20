@@ -1,4 +1,3 @@
-import * as React from "react";
 import "./TitleBlock.scss";
 
 export default function TitleBlock() {
