@@ -25,6 +25,10 @@ export const ExpandableContent: React.FC<ExpandableContentProps> = ({
 }) => {
   const [isVisible, setIsVisible] = React.useState(defaultExpanded);
 
+  const toggleContent = () => {
+    setIsVisible(!isVisible);
+  };
+
   return (
     <div className="content-block">
       <div className="flex-title-row">
@@ -32,9 +36,10 @@ export const ExpandableContent: React.FC<ExpandableContentProps> = ({
         <div className="icon-item">
           <button
             className="show-content-btn"
-            onClick={() => setIsVisible(!isVisible)}
+            onClick={toggleContent}
             aria-expanded={isVisible}
             aria-controls={`content-${title.toLowerCase().replace(/\s+/g, "-")}`}
+            aria-label={`${isVisible ? "Piilota" : "Näytä"} ${title} sisältö`}
           >
             {isVisible ? <ExpandLessIcon /> : <ExpandMoreIcon />}
           </button>
